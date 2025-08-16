@@ -1,4 +1,4 @@
-import React , { useEffect } from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import Ad1 from "../../../public/hero-video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,8 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 export const ElementLight = () => {
-
-useEffect(() => {
+  useEffect(() => {
     let deliveryintervalId = null;
 
     function initDeliveryInfo() {
@@ -16,7 +15,7 @@ useEffect(() => {
         const deliveryInfoElements = document.querySelectorAll(
           ".troopod_delivery_info"
         );
-        const deliveryInfoLength = 4; // Updated to match the actual number of elements
+        const deliveryInfoLength = 3; // Updated to match the actual number of elements
 
         if (deliveryInfoElements.length === deliveryInfoLength) {
           let currentIndex = 0;
@@ -74,7 +73,6 @@ useEffect(() => {
     window.addEventListener("DOMContentLoaded", setActiveBreadcrumb);
     window.addEventListener("hashchange", setActiveBreadcrumb);
   }, []);
-
 
   return (
     <div className="element-light">
@@ -283,32 +281,32 @@ useEffect(() => {
                 </button>
               </div>
 
-            <div id="stickyNav" class="nav-container">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  gap: "10px",
-                  alignItems: "center",
-                  width: "100%",
-                  padding: "10px 10px",
-                  background: "#FFF",
-                }}
-              >
-                <a href="#labdiamonds" className="breadcrum">
-                  Accessories
-                </a>
-                <a href="#naturalvslab" className="breadcrum">
-                  Shoes
-                </a>
-                <a href="#about" className="breadcrum">
-                  Women
-                </a>
-                <a href="#reviews" className="breadcrum">
-                  Reviews
-                </a>
+              <div id="stickyNav" class="nav-container">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "10px",
+                    alignItems: "center",
+                    width: "100%",
+                    // padding: "10px 10px",
+                    background: "#FFF",
+                  }}
+                >
+                  <a href="#labdiamonds" className="breadcrum">
+                    Concealer
+                  </a>
+                  <a href="#naturalvslab" className="breadcrum">
+                    Complexion
+                  </a>
+                  <a href="#about" className="breadcrum">
+                    Skincare
+                  </a>
+                  <a href="#reviews" className="breadcrum">
+                    Reviews
+                  </a>
+                </div>
               </div>
-            </div>
 
               <div className="section">
                 <div className="heading-you-may">You may also like</div>
@@ -1688,21 +1686,20 @@ useEffect(() => {
           </div>
         </div>
       </div>
-              <div className="sticky-cart">
-          <button className="primary-cta">ADD TO BAG</button>
-          <div className="slide-text-container">
-            <div className="slide-texts">
-              <div className="troopod_delivery_info">
-                Complimentary Shipping
-              </div>
-              <div className="troopod_delivery_info">
-                Complimentary Shipping
-              </div>
-              <div className="troopod_delivery_info">30-Day Returns</div>
-              <div className="troopod_delivery_info">Same-Day Delivery</div>
+      <div className="sticky-cart">
+        <button className="primary-cta">ADD TO BAG</button>
+        <div className="slide-text-container">
+          <div className="slide-texts">
+            <div className="troopod_delivery_info">
+              30-Day Money-Back Guarantee
             </div>
+            <div className="troopod_delivery_info">
+              Cruelty-Free & Clean Beauty
+            </div>
+            <div className="troopod_delivery_info">100% Secure Checkout</div>
           </div>
         </div>
+      </div>
     </div>
   );
 };
