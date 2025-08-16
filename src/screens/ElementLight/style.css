@@ -4932,3 +4932,140 @@
     padding: 10px 20px;
   }
 }
+
+
+.sticky-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 16px 12px 16px;
+  z-index: 1000;
+}
+
+.sticky-cart .primary-cta {
+  width: 100%;
+  padding: 16px;
+  background: #000000; /* Vibrant red */
+  border: none;
+  border-radius: 1px;
+  letter-spacing: 0.5px;
+  line-height: normal;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-family: "Inter", Helvetica;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sticky-cart .primary-cta:hover {
+  background: #8b9b8e;
+  transform: translateY(-1px);
+}
+
+.slide-text-container {
+  overflow: hidden;
+  height: 1.5em;
+  margin-top: 12px;
+  position: relative;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.troopod_delivery_info {
+  position: relative;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+  display: none;
+  font-size: 13px;
+  font-family: "Inter", Helvetica;
+}
+
+.troopod_delivery_info.active {
+  display: flex;
+  position: relative;
+  animation: slideUp 3s forwards;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-swiper {
+  width: 100%;
+  max-width: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+
+.urgency-text {
+  text-align: center;
+  margin: 8px 0 12px;
+  font-family: var(--font-family-inter);
+  font-size: 13px;
+  color: #e84c3d;
+  font-weight: 600;
+}
+
+.comparison-icon {
+  margin-right: 6px;
+  font-size: 16px;
+  color: #8b9b8e;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  10%,
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+
+.nav-container {
+  position: relative;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.nav-container a {
+  display: block !important;
+  padding: 7px;
+  font-size: 17px;
+  color: #fff;
+  background: #000000;
+}
+
+.nav-container.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.breadcrum.active {
+  color: #fff;
+  background-color: #5e675f;
+}
+

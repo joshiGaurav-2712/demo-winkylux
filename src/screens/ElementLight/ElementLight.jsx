@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useEffect } from "react";
 import "./style.css";
 import Ad1 from "../../../public/hero-video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,6 +7,75 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 export const ElementLight = () => {
+
+useEffect(() => {
+    let deliveryintervalId = null;
+
+    function initDeliveryInfo() {
+      setTimeout(() => {
+        const deliveryInfoElements = document.querySelectorAll(
+          ".troopod_delivery_info"
+        );
+        const deliveryInfoLength = 4; // Updated to match the actual number of elements
+
+        if (deliveryInfoElements.length === deliveryInfoLength) {
+          let currentIndex = 0;
+
+          if (deliveryintervalId) {
+            clearInterval(deliveryintervalId);
+          }
+
+          const showNextItem = function () {
+            const currentItem = deliveryInfoElements[currentIndex];
+            const nextIndex = (currentIndex + 1) % deliveryInfoElements.length;
+            const nextItem = deliveryInfoElements[nextIndex];
+
+            if (currentItem && nextItem) {
+              currentItem.classList.remove("active");
+              nextItem.classList.add("active");
+              currentIndex = nextIndex;
+            }
+          };
+
+          deliveryInfoElements.forEach((el) => el.classList.remove("active"));
+          deliveryInfoElements[0]?.classList.add("active");
+
+          deliveryintervalId = setInterval(showNextItem, 3000);
+        } else {
+          initDeliveryInfo();
+        }
+      }, 500);
+    }
+
+    initDeliveryInfo();
+  }, []);
+
+  useEffect(() => {
+    const nav = document.getElementById("stickyNav");
+    const navOffset = nav.offsetTop;
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > navOffset) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    function setActiveBreadcrumb() {
+      const hash = window.location.hash;
+      document.querySelectorAll(".breadcrum").forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === hash);
+      });
+    }
+
+    window.addEventListener("DOMContentLoaded", setActiveBreadcrumb);
+    window.addEventListener("hashchange", setActiveBreadcrumb);
+  }, []);
+
+
   return (
     <div className="element-light">
       <div className="overlap">
@@ -213,6 +282,33 @@ export const ElementLight = () => {
                   <div className="text-wrapper-20">ADD TO CART</div>
                 </button>
               </div>
+
+            <div id="stickyNav" class="nav-container">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "10px",
+                  alignItems: "center",
+                  width: "100%",
+                  padding: "10px 10px",
+                  background: "#FFF",
+                }}
+              >
+                <a href="#labdiamonds" className="breadcrum">
+                  Accessories
+                </a>
+                <a href="#naturalvslab" className="breadcrum">
+                  Shoes
+                </a>
+                <a href="#about" className="breadcrum">
+                  Women
+                </a>
+                <a href="#reviews" className="breadcrum">
+                  Reviews
+                </a>
+              </div>
+            </div>
 
               <div className="section">
                 <div className="heading-you-may">You may also like</div>
@@ -1592,6 +1688,21 @@ export const ElementLight = () => {
           </div>
         </div>
       </div>
+              <div className="sticky-cart">
+          <button className="primary-cta">ADD TO BAG</button>
+          <div className="slide-text-container">
+            <div className="slide-texts">
+              <div className="troopod_delivery_info">
+                Complimentary Shipping
+              </div>
+              <div className="troopod_delivery_info">
+                Complimentary Shipping
+              </div>
+              <div className="troopod_delivery_info">30-Day Returns</div>
+              <div className="troopod_delivery_info">Same-Day Delivery</div>
+            </div>
+          </div>
+        </div>
     </div>
   );
 };
