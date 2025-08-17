@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 import "./style.css";
 import Ad1 from "../../../public/hero-video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay , EffectCoverflow } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -51,28 +56,27 @@ export const ElementLight = () => {
     initDeliveryInfo();
   }, []);
 
-useEffect(() => {
-  const nav = document.getElementById("stickyNav");
-  if (!nav) return;
+  useEffect(() => {
+    const nav = document.getElementById("stickyNav");
+    if (!nav) return;
 
-  const navOffset = nav.offsetTop;
+    const navOffset = nav.offsetTop;
 
-  const handleScroll = () => {
-    console.log("scrolling");
-    if (window.scrollY > navOffset) {
-      nav.classList.add("sticky");
-    } else {
-      nav.classList.remove("sticky");
-    }
-  };
+    const handleScroll = () => {
+      console.log("scrolling");
+      if (window.scrollY > navOffset) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
-
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     function setActiveBreadcrumb() {
@@ -86,7 +90,6 @@ useEffect(() => {
     window.addEventListener("hashchange", setActiveBreadcrumb);
   }, []);
 
-  
   return (
     <div className="element-light">
       <div className="overlap">
@@ -146,10 +149,17 @@ useEffect(() => {
 
                   <div className="trust-signals">
                     <span className="trust-item">
-                      ✅ Free shipping over $30
+                      <span className="trust-icon">🚚</span>
+                      Free shipping over $30
                     </span>
-                    <span className="trust-item">✅ Hassle-free returns</span>
-                    <span className="trust-item">✅ Cruelty-free</span>
+                    <span className="trust-item">
+                      <span className="trust-icon">↩️</span>
+                      Hassle-free returns
+                    </span>
+                    <span className="trust-item">
+                      <span className="trust-icon">🐰</span>
+                      Cruelty-free
+                    </span>
                   </div>
                 </div>
               </section>
@@ -160,8 +170,12 @@ useEffect(() => {
                 <div className="premium-container">
                   <div className="section-header">
                     <span className="accent-line"></span>
-                    <h2 className="section-title">Experience the Transformation</h2>
-                    <p className="section-subtitle">Your journey to effortless radiance</p>
+                    <h2 className="section-title">
+                      Experience the Transformation
+                    </h2>
+                    <p className="section-subtitle">
+                      Your journey to effortless radiance
+                    </p>
                   </div>
 
                   <div className="transformation-showcase">
@@ -197,12 +211,7 @@ useEffect(() => {
                       </div>
                     </div>
 
-                    <div className="transformation-divider">
-                      <div className="divider-line"></div>
-                      <div className="divider-circle">
-                        <span className="magic-text">Magic</span>
-                      </div>
-                    </div>
+                    <div className="spinning-gradient-divider"></div>
 
                     <div className="showcase-step after-step">
                       <div className="step-content">
@@ -236,88 +245,65 @@ useEffect(() => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="social-proof">
-                    <div className="quote-container">
-                      <div className="quote-mark">❝</div>
-                      <blockquote>
-                        This isn't just makeup, it's my daily confidence boost. The way it transforms my under-eye area is pure magic!
-                      </blockquote>
-                      <cite>— Sarah M. | Beauty Editor</cite>
-                      <div className="rating">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="review-count">Verified Purchase</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="testimonial-highlight">
-                    <blockquote>
-                      "I wish you could feel how creamy this is. Just look how seamlessly it blends."
-                    </blockquote>
-                    <cite>— Real Customer from Viral TikTok</cite>
-                  </div>
-
                 </div>
 
-                <section className="troopod-section" data-section="shoppable-videos">
-      <div className="troopod-container">
-        {/* Video carousel with lifestyle content */}
-        <Swiper
-          modules={[Navigation, EffectCoverflow]}
-          className="troopod-swiper mySwiper"
-          effect="coverflow"
-          centeredSlides={true}
-          slidesPerView={1.3}
-          spaceBetween={30}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-          }}
-          loop={false}
-        >
-          <SwiperSlide>
-            <div className="video-card">
-              <video autoPlay muted loop playsInline>
-                <source src={Ad1} type="video/mp4" />
-              </video>
-            </div>
-          </SwiperSlide>
+                <section
+                  className="troopod-section"
+                  data-section="shoppable-videos"
+                >
+                  <div className="troopod-container">
+                    {/* Video carousel with lifestyle content */}
+                    <Swiper
+                      modules={[Navigation, EffectCoverflow]}
+                      className="troopod-swiper mySwiper"
+                      effect="coverflow"
+                      centeredSlides={true}
+                      slidesPerView={1.3}
+                      spaceBetween={30}
+                      navigation={{
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                      }}
+                      coverflowEffect={{
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: false,
+                      }}
+                      loop={false}
+                    >
+                      <SwiperSlide>
+                        <div className="video-card">
+                          <video autoPlay muted loop playsInline>
+                            <source src={Ad1} type="video/mp4" />
+                          </video>
+                        </div>
+                      </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="video-card">
-              <video autoPlay muted loop playsInline>
-                <source src={Ad1} type="video/mp4" />
-              </video>
-            </div>
-          </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="video-card">
+                          <video autoPlay muted loop playsInline>
+                            <source src={Ad1} type="video/mp4" />
+                          </video>
+                        </div>
+                      </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="video-card">
-              <video autoPlay muted loop playsInline>
-                <source src={Ad1} type="video/mp4" />
-              </video>
-            </div>
-          </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="video-card">
+                          <video autoPlay muted loop playsInline>
+                            <source src={Ad1} type="video/mp4" />
+                          </video>
+                        </div>
+                      </SwiperSlide>
 
-          {/* Navigation arrows */}
-          <div className="swiper-button-next"></div>
-          <div className="swiper-button-prev"></div>
-        </Swiper>
-      </div>
-    </section>
-    </section>
+                      {/* Navigation arrows */}
+                      <div className="swiper-button-next"></div>
+                      <div className="swiper-button-prev"></div>
+                    </Swiper>
+                  </div>
+                </section>
+              </section>
 
               <div className="form">
                 <div className="tolstoy-stories">
@@ -680,7 +666,6 @@ useEffect(() => {
                 />
               </div>
 
-
               {/* Lifestyle Testimonials Section */}
               <section className="testimonials">
                 <div className="container">
@@ -912,98 +897,174 @@ useEffect(() => {
                 </div>
               </section>
 
-                {/* Coverage Claims Section */}
-                <section className="coverage-claims">
-                    <div className="container">
-                        <h2 className="section-title">All The Coverage, None of The Cakiness</h2>
-                        <p className="section-subtitle">The 4 promises that make this concealer go viral</p>
-                        
-                        <div className="claims-grid">
-                            <div className="claim-card" data-claim="coverage">
-                                <div className="claim-icon coverage-icon">
-                                    <svg width="40" height="40" viewBox="0 0 40 40">
-                                        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
-                                        <path d="M12 20 L18 26 L28 14" stroke="currentColor" strokeWidth="3" fill="none"/>
-                                    </svg>
-                                </div>
-                                <h3>Full Coverage</h3>
-                                <p>Covers dark circles, blemishes, and imperfections without looking heavy or obvious</p>
-                                <div className="claim-proof">
-                                    <span className="proof-stat">100% Coverage</span>
-                                    <span className="proof-desc">Without the mask effect</span>
-                                </div>
-                            </div>
-                            
-                            <div className="claim-card" data-claim="glow">
-                                <div className="claim-icon glow-icon">
-                                    <svg width="40" height="40" viewBox="0 0 40 40">
-                                        <circle cx="20" cy="20" r="10" fill="currentColor" opacity="0.3"/>
-                                        <path d="M20 2 L20 8 M20 32 L20 38 M38 20 L32 20 M8 20 L2 20 M33.14 6.86 L28.28 11.72 M11.72 28.28 L6.86 33.14 M33.14 33.14 L28.28 28.28 M11.72 11.72 L6.86 6.86" stroke="currentColor" strokeWidth="2"/>
-                                    </svg>
-                                </div>
-                                <h3>That Glow</h3>
-                                <p>Brightening effect that makes you look awake and radiant, not flat or dull</p>
-                                <div className="claim-proof">
-                                    <span className="proof-stat">Instant Radiance</span>
-                                    <span className="proof-desc">Like you slept 10 hours</span>
-                                </div>
-                            </div>
-                            
-                            <div className="claim-card" data-claim="blending">
-                                <div className="claim-icon blending-icon">
-                                    <svg width="40" height="40" viewBox="0 0 40 40">
-                                        <path d="M5 20 Q20 5 35 20 Q20 35 5 20" fill="none" stroke="currentColor" strokeWidth="2"/>
-                                        <circle cx="15" cy="20" r="3" fill="currentColor" opacity="0.7"/>
-                                        <circle cx="25" cy="20" r="3" fill="currentColor" opacity="0.7"/>
-                                    </svg>
-                                </div>
-                                <h3>Seamless Blending</h3>
-                                <p>Melts into skin like it was meant to be there. No harsh lines or patches</p>
-                                <div className="claim-proof">
-                                    <span className="proof-stat">Effortless Application</span>
-                                    <span className="proof-desc">Blends like butter</span>
-                                </div>
-                            </div>
-                            
-                            <div className="claim-card" data-claim="longevity">
-                                <div className="claim-icon longevity-icon">
-                                    <svg width="40" height="40" viewBox="0 0 40 40">
-                                        <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" strokeWidth="2"/>
-                                        <path d="M20 8 L20 20 L28 28" stroke="currentColor" strokeWidth="2" fill="none"/>
-                                        <circle cx="20" cy="20" r="2" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <h3>Crease-Resistant</h3>
-                                <p>Holds up against fine lines and stays put all day without settling or fading</p>
-                                <div className="claim-proof">
-                                    <span className="proof-stat">All-Day Wear</span>
-                                    <span className="proof-desc">No touch-ups needed</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div className="claims-testimonial">
-                            <div className="testimonial-content">
-                                <blockquote>"All of the coverage, none of the cakiness. Look at that glow!"</blockquote>
-                                <cite>— From the Viral TikTok Video</cite>
-                            </div>
-                            <div className="social-proof-numbers">
-                                <div className="proof-number">
-                                    <span className="number">2.3M+</span>
-                                    <span className="proof_text">TikTok Views</span>
-                                </div>
-                                <div className="proof-number">
-                                    <span className="number">966+</span>
-                                    <span className="proof_text">5-Star Reviews</span>
-                                </div>
-                                <div className="proof-number">
-                                    <span className="number">96%</span>
-                                    <span className="proof_text">Would Recommend</span>
-                                </div>
-                            </div>
-                        </div>
+              {/* Coverage Claims Section */}
+              <section className="coverage-claims">
+                <div className="container">
+                  <h2 className="section-title">
+                    All The Coverage, None of The Cakiness
+                  </h2>
+                  <p className="section-subtitle">
+                    The 4 promises that make this concealer go viral
+                  </p>
+
+                  <div className="claims-grid">
+                    <div className="claim-card" data-claim="coverage">
+                      <div className="claim-icon coverage-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                          <circle
+                            cx="20"
+                            cy="20"
+                            r="18"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M12 20 L18 26 L28 14"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            fill="none"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Full Coverage</h3>
+                      <p>
+                        Covers dark circles, blemishes, and imperfections
+                        without looking heavy or obvious
+                      </p>
+                      <div className="claim-proof">
+                        <span className="proof-stat">100% Coverage</span>
+                        <span className="proof-desc">
+                          Without the mask effect
+                        </span>
+                      </div>
                     </div>
-                </section>
+
+                    <div className="claim-card" data-claim="glow">
+                      <div className="claim-icon glow-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                          <circle
+                            cx="20"
+                            cy="20"
+                            r="10"
+                            fill="currentColor"
+                            opacity="0.3"
+                          />
+                          <path
+                            d="M20 2 L20 8 M20 32 L20 38 M38 20 L32 20 M8 20 L2 20 M33.14 6.86 L28.28 11.72 M11.72 28.28 L6.86 33.14 M33.14 33.14 L28.28 28.28 M11.72 11.72 L6.86 6.86"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                        </svg>
+                      </div>
+                      <h3>That Glow</h3>
+                      <p>
+                        Brightening effect that makes you look awake and
+                        radiant, not flat or dull
+                      </p>
+                      <div className="claim-proof">
+                        <span className="proof-stat">Instant Radiance</span>
+                        <span className="proof-desc">
+                          Like you slept 10 hours
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="claim-card" data-claim="blending">
+                      <div className="claim-icon blending-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                          <path
+                            d="M5 20 Q20 5 35 20 Q20 35 5 20"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                          <circle
+                            cx="15"
+                            cy="20"
+                            r="3"
+                            fill="currentColor"
+                            opacity="0.7"
+                          />
+                          <circle
+                            cx="25"
+                            cy="20"
+                            r="3"
+                            fill="currentColor"
+                            opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <h3>Seamless Blending</h3>
+                      <p>
+                        Melts into skin like it was meant to be there. No harsh
+                        lines or patches
+                      </p>
+                      <div className="claim-proof">
+                        <span className="proof-stat">
+                          Effortless Application
+                        </span>
+                        <span className="proof-desc">Blends like butter</span>
+                      </div>
+                    </div>
+
+                    <div className="claim-card" data-claim="longevity">
+                      <div className="claim-icon longevity-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40">
+                          <circle
+                            cx="20"
+                            cy="20"
+                            r="16"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M20 8 L20 20 L28 28"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            fill="none"
+                          />
+                          <circle cx="20" cy="20" r="2" fill="currentColor" />
+                        </svg>
+                      </div>
+                      <h3>Crease-Resistant</h3>
+                      <p>
+                        Holds up against fine lines and stays put all day
+                        without settling or fading
+                      </p>
+                      <div className="claim-proof">
+                        <span className="proof-stat">All-Day Wear</span>
+                        <span className="proof-desc">No touch-ups needed</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="claims-testimonial">
+                    <div className="testimonial-content">
+                      <blockquote>
+                        "All of the coverage, none of the cakiness. Look at that
+                        glow!"
+                      </blockquote>
+                      <cite>— From the Viral TikTok Video</cite>
+                    </div>
+                    <div className="social-proof-numbers">
+                      <div className="proof-number">
+                        <span className="number">2.3M+</span>
+                        <span className="proof_text">TikTok Views</span>
+                      </div>
+                      <div className="proof-number">
+                        <span className="number">966+</span>
+                        <span className="proof_text">5-Star Reviews</span>
+                      </div>
+                      <div className="proof-number">
+                        <span className="number">96%</span>
+                        <span className="proof_text">Would Recommend</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
               <div className="section-3">
                 <section className="science-behind-glow">
@@ -1081,15 +1142,21 @@ useEffect(() => {
                       </span>
                       <h4 className="sbg-name">Hydrolyzed Collagen</h4>
                       <p className="sbg-line">
-                        <strong>What it does:</strong> Plumps and firms delicate under-eye skin for that youthful, well-rested appearance.
+                        <strong>What it does:</strong> Plumps and firms delicate
+                        under-eye skin for that youthful, well-rested
+                        appearance.
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> Reduces the appearance of fine lines while giving you instant coverage. It's like a mini eye treatment every time you apply your concealer!
+                        <strong>Why you’ll love it:</strong> Reduces the
+                        appearance of fine lines while giving you instant
+                        coverage. It's like a mini eye treatment every time you
+                        apply your concealer!
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Glow Factor:</strong> Creates natural skin plumpness for healthy radiance
+                        <strong>Glow Factor:</strong> Creates natural skin
+                        plumpness for healthy radiance
                       </p>
                     </article>
 
@@ -1114,7 +1181,9 @@ useEffect(() => {
                       </span>
                       <h4 className="sbg-name">Hyaluronic Acid</h4>
                       <p className="sbg-line">
-                        <strong>What it does:</strong> Holds up to 1000x its weight in water, keeping your under-eye area hydrated and smooth.
+                        <strong>What it does:</strong> Holds up to 1000x its
+                        weight in water, keeping your under-eye area hydrated
+                        and smooth.
                       </p>
                       <hr />
                       <p className="sbg-line">
@@ -1123,7 +1192,8 @@ useEffect(() => {
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Glow Factor:</strong> Dewy, hydrated finish that catches light beautifully
+                        <strong>Glow Factor:</strong> Dewy, hydrated finish that
+                        catches light beautifully
                       </p>
                     </article>
 
@@ -1149,11 +1219,15 @@ useEffect(() => {
                       </span>
                       <h4 className="sbg-name">Vitamin E (Tocopherol)</h4>
                       <p className="sbg-line">
-                        <strong>What it does:</strong> Protects and nourishes delicate under-eye skin while providing moisture and conditioning.
+                        <strong>What it does:</strong> Protects and nourishes
+                        delicate under-eye skin while providing moisture and
+                        conditioning.
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> Prevents irritation and keeps your skin healthy, even with daily concealer use.
+                        <strong>Why you’ll love it:</strong> Prevents irritation
+                        and keeps your skin healthy, even with daily concealer
+                        use.
                       </p>
                       <hr />
                       <p className="sbg-line">
@@ -1185,11 +1259,15 @@ useEffect(() => {
                       </span>
                       <h4 className="sbg-name">Glycerin</h4>
                       <p className="sbg-line">
-                        <strong>What it does:</strong> Creates that ultra-smooth, seamless application by attracting moisture to your skin's surface.
+                        <strong>What it does:</strong> Creates that
+                        ultra-smooth, seamless application by attracting
+                        moisture to your skin's surface.
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> This is why the concealer "blends like a dream" - it literally helps the formula melt into your skin!
+                        <strong>Why you’ll love it:</strong> This is why the
+                        concealer "blends like a dream" - it literally helps the
+                        formula melt into your skin!
                       </p>
                       <hr />
                       <p className="sbg-line">
@@ -1218,7 +1296,13 @@ useEffect(() => {
                     <h3 className="sbg-callout-title">
                       The Secret to ‘Look at That Glow’
                     </h3>
-                    <p>These four powerhouse ingredients work together to create that enviable glow everyone's talking about. It's not just makeup—it's skincare that makes your skin look naturally radiant and healthy, like you actually got those 10 hours of sleep!</p>
+                    <p>
+                      These four powerhouse ingredients work together to create
+                      that enviable glow everyone's talking about. It's not just
+                      makeup—it's skincare that makes your skin look naturally
+                      radiant and healthy, like you actually got those 10 hours
+                      of sleep!
+                    </p>
                     <br />
                     <div className="sbg-stats">
                       <div className="sbg-stat">
