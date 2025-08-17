@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./style.css";
 import Ad1 from "../../../public/hero-video.mp4";
+import Ad2 from "../../../public/vc2.mp4";
+import Ad3 from "../../../public/vc3.mp4";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -370,7 +373,7 @@ export const ElementLight = () => {
                     <SwiperSlide>
                       <div className="video-card">
                         <video autoPlay muted loop playsInline>
-                          <source src={Ad1} type="video/mp4" />
+                          <source src={Ad2} type="video/mp4" />
                         </video>
                       </div>
                     </SwiperSlide>
@@ -378,7 +381,7 @@ export const ElementLight = () => {
                     <SwiperSlide>
                       <div className="video-card">
                         <video autoPlay muted loop playsInline>
-                          <source src={Ad1} type="video/mp4" />
+                          <source src={Ad3} type="video/mp4" />
                         </video>
                       </div>
                     </SwiperSlide>
