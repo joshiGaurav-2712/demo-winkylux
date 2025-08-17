@@ -4544,7 +4544,7 @@ body {
 
   .element-light .hero-video-container {
     height: 400px;
-    left: 3px;
+    left: 0px;
   }
 
   .element-light .cta-button {
