@@ -677,7 +677,7 @@ body {
   position: absolute;
   text-align: center;
   top: 14px;
-  width: 88px;
+  
 }
 
 .element-light .link-3 {
@@ -4495,7 +4495,7 @@ body {
 }
 
 .element-light .cta-button.primary {
-  background: linear-gradient(135deg, #ff6b9d, #c44569);
+  background: black;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
 }
@@ -4506,9 +4506,9 @@ body {
 }
 
 .element-light .cta-button.secondary {
-  background-color: #faeadf;
+  background-color: white;
   color: #000000;
-  border: 2px solid #e8d5c4;
+  border: 2px solid;
 }
 
 .element-light .cta-button.secondary:hover {
@@ -4843,7 +4843,7 @@ body {
 }
 
 .element-light .testimonial-cta .cta-button {
-  background: linear-gradient(135deg, #ff6b9d, #ff8a80);
+  background: black;
   color: #ffffff;
   font-family: "Inter", Helvetica;
   font-size: 14px;
