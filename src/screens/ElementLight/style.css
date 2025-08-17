@@ -5431,7 +5431,7 @@ body {
   font-family: "Inter", Helvetica;
   font-size: 12px;
   line-height: 1.4;
-  margin: 0 0 12px 0;
+  margin: 0 24px 12px 0;
   font-style: italic;
   letter-spacing: 0.1px;
   flex: 1;
@@ -5493,7 +5493,7 @@ body {
   border: 2px solid #e8d5c4;
   border-radius: 50%;
   width: 35px;
-  height: 35px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
