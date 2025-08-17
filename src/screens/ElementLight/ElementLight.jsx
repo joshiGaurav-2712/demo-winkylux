@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import "./style.css";
 import Ad1 from "../../../public/hero-video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay , EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+
 export const ElementLight = () => {
   useEffect(() => {
     let deliveryintervalId = null;
@@ -49,18 +51,28 @@ export const ElementLight = () => {
     initDeliveryInfo();
   }, []);
 
-  useEffect(() => {
-    const nav = document.getElementById("stickyNav");
-    const navOffset = nav.offsetTop;
+useEffect(() => {
+  const nav = document.getElementById("stickyNav");
+  if (!nav) return;
 
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > navOffset) {
-        nav.classList.add("sticky");
-      } else {
-        nav.classList.remove("sticky");
-      }
-    });
-  }, []);
+  const navOffset = nav.offsetTop;
+
+  const handleScroll = () => {
+    console.log("scrolling");
+    if (window.scrollY > navOffset) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
 
   useEffect(() => {
     function setActiveBreadcrumb() {
@@ -74,6 +86,7 @@ export const ElementLight = () => {
     window.addEventListener("hashchange", setActiveBreadcrumb);
   }, []);
 
+  
   return (
     <div className="element-light">
       <div className="overlap">
@@ -140,6 +153,171 @@ export const ElementLight = () => {
                   </div>
                 </div>
               </section>
+
+              {/* Before/After Visual Section */}
+              <section className="before-after">
+                <div className="section-spacer"></div>
+                <div className="premium-container">
+                  <div className="section-header">
+                    <span className="accent-line"></span>
+                    <h2 className="section-title">Experience the Transformation</h2>
+                    <p className="section-subtitle">Your journey to effortless radiance</p>
+                  </div>
+
+                  <div className="transformation-showcase">
+                    <div className="showcase-step before-step">
+                      <div className="step-content">
+                        <div className="step-number">01</div>
+                        <div className="step-details">
+                          <h3>Before Application</h3>
+                          <div className="feature-list">
+                            <div className="feature-item">
+                              <div className="feature-icon">●</div>
+                              <div className="feature-text">
+                                <strong>Dark Circles</strong>
+                                <span>Signs of tiredness and stress</span>
+                              </div>
+                            </div>
+                            <div className="feature-item">
+                              <div className="feature-icon">●</div>
+                              <div className="feature-text">
+                                <strong>Uneven Texture</strong>
+                                <span>Visible puffiness and shadows</span>
+                              </div>
+                            </div>
+                            <div className="feature-item">
+                              <div className="feature-icon">●</div>
+                              <div className="feature-text">
+                                <strong>Dullness</strong>
+                                <span>Lack of natural radiance</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="transformation-divider">
+                      <div className="divider-line"></div>
+                      <div className="divider-circle">
+                        <span className="magic-text">Magic</span>
+                      </div>
+                    </div>
+
+                    <div className="showcase-step after-step">
+                      <div className="step-content">
+                        <div className="step-number">02</div>
+                        <div className="step-details">
+                          <h3>After One Application</h3>
+                          <div className="feature-list">
+                            <div className="feature-item highlight">
+                              <div className="feature-icon">✧</div>
+                              <div className="feature-text">
+                                <strong>Flawless Coverage</strong>
+                                <span>Instantly brightened & even</span>
+                              </div>
+                            </div>
+                            <div className="feature-item highlight">
+                              <div className="feature-icon">✧</div>
+                              <div className="feature-text">
+                                <strong>Natural Finish</strong>
+                                <span>Seamlessly blended texture</span>
+                              </div>
+                            </div>
+                            <div className="feature-item highlight">
+                              <div className="feature-icon">✧</div>
+                              <div className="feature-text">
+                                <strong>Lasting Radiance</strong>
+                                <span>All-day luminous glow</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="social-proof">
+                    <div className="quote-container">
+                      <div className="quote-mark">❝</div>
+                      <blockquote>
+                        This isn't just makeup, it's my daily confidence boost. The way it transforms my under-eye area is pure magic!
+                      </blockquote>
+                      <cite>— Sarah M. | Beauty Editor</cite>
+                      <div className="rating">
+                        <span className="star">★</span>
+                        <span className="star">★</span>
+                        <span className="star">★</span>
+                        <span className="star">★</span>
+                        <span className="star">★</span>
+                        <span className="review-count">Verified Purchase</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="testimonial-highlight">
+                    <blockquote>
+                      "I wish you could feel how creamy this is. Just look how seamlessly it blends."
+                    </blockquote>
+                    <cite>— Real Customer from Viral TikTok</cite>
+                  </div>
+
+                </div>
+
+                <section className="troopod-section" data-section="shoppable-videos">
+      <div className="troopod-container">
+        {/* Video carousel with lifestyle content */}
+        <Swiper
+          modules={[Navigation, EffectCoverflow]}
+          className="troopod-swiper mySwiper"
+          effect="coverflow"
+          centeredSlides={true}
+          slidesPerView={1.3}
+          spaceBetween={30}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          loop={false}
+        >
+          <SwiperSlide>
+            <div className="video-card">
+              <video autoPlay muted loop playsInline>
+                <source src={Ad1} type="video/mp4" />
+              </video>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="video-card">
+              <video autoPlay muted loop playsInline>
+                <source src={Ad1} type="video/mp4" />
+              </video>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="video-card">
+              <video autoPlay muted loop playsInline>
+                <source src={Ad1} type="video/mp4" />
+              </video>
+            </div>
+          </SwiperSlide>
+
+          {/* Navigation arrows */}
+          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev"></div>
+        </Swiper>
+      </div>
+    </section>
+    </section>
 
               <div className="form">
                 <div className="tolstoy-stories">
@@ -281,7 +459,7 @@ export const ElementLight = () => {
                 </button>
               </div>
 
-              <div id="stickyNav" class="nav-container">
+              <div id="stickyNav" className="nav-container">
                 <div
                   style={{
                     display: "flex",
@@ -501,6 +679,7 @@ export const ElementLight = () => {
                   src="/img/tablist-1.svg"
                 />
               </div>
+
 
               {/* Lifestyle Testimonials Section */}
               <section className="testimonials">
