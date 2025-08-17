@@ -669,7 +669,7 @@ body {
   height: 1509px;
   left: 5px;
   position: absolute;
-  top: 810px;
+  top: 500px;
   width: calc(100% - 10px);
   max-width: 380px;
 }
@@ -1354,7 +1354,7 @@ body {
   height: 482px;
   left: 0;
   position: absolute;
-  top: 2339px;
+  top: 2021px;
   width: 100%;
   max-width: 390px;
 }
@@ -4126,7 +4126,7 @@ body {
   height: 778px;
   left: 0;
   position: absolute;
-  top: 11979px;
+  top: 11577px;
   width: 100%;
   max-width: 390px;
 }
