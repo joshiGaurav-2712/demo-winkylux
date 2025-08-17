@@ -1,34 +1,45 @@
+/* Global responsive styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .element-light {
   background-color: #ffffff;
-  height: 8150px;
+  min-height: 8150px;
   position: relative;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
 }
 
 .element-light .overlap {
-  height: 8150px;
+  min-height: 8150px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 390px;
+  width: 100%;
 }
 
 .element-light .background {
   background-color: #faeadf;
-  height: 8150px;
+  min-height: 8150px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 390px;
+  width: 100%;
 }
 
 .element-light .div {
   background-color: #ffffff;
-  height: 8150px;
+  min-height: 8150px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 390px;
+  width: 100%;
 }
 
 .element-light .main {
@@ -36,7 +47,7 @@
   left: 0;
   position: absolute;
   top: 96px;
-  width: 390px;
+  width: 100%;
 }
 
 .element-light .container {
@@ -45,7 +56,8 @@
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 380px;
+  width: calc(100% - 10px);
+  max-width: 380px;
 }
 
 .element-light .fair-peeper-perfect {
@@ -53,7 +65,8 @@
   background-position: 50% 50%;
   background-size: cover;
   height: 508px;
-  width: 381px;
+  width: 100%;
+  max-width: 381px;
 }
 
 .element-light .tablist {
@@ -62,7 +75,8 @@
   object-fit: cover;
   position: absolute;
   top: 508px;
-  width: 380px;
+  width: calc(100% - 10px);
+  max-width: 380px;
 }
 
 .element-light .form {
@@ -70,7 +84,8 @@
   left: 5px;
   position: absolute;
   top: 550px;
-  width: 380px;
+  width: calc(100% - 10px);
+  max-width: 380px;
 }
 
 .element-light .heading-peeper {
@@ -754,7 +769,8 @@
   left: 0;
   position: absolute;
   top: 2079px;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .heading-you-may {
@@ -1518,7 +1534,7 @@
 }
 
 .element-light .section-3 {
-  height: 816px;
+  height: 1280px;
   left: 2px;
   position: absolute;
   top: 3240px;
@@ -1792,7 +1808,7 @@
   height: 337px;
   left: 20px;
   position: absolute;
-  top: 4106px;
+  top: 4570px;
   width: 350px;
 }
 
@@ -1860,7 +1876,7 @@
   height: 2818px;
   left: 36px;
   position: absolute;
-  top: 4458px;
+  top: 4922px;
   width: 283px;
 }
 
@@ -1884,7 +1900,6 @@
   position: absolute;
   text-align: center;
   top: 0;
-  width: 80px;
 }
 
 .element-light .link-trusted-reviews {
@@ -1901,12 +1916,12 @@
   font-size: 11.9px;
   font-weight: 400;
   height: 14px;
-  left: 0;
+  left: -80px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 0;
+  top: -58px;
   white-space: nowrap;
   width: 107px;
 }
@@ -1915,9 +1930,9 @@
   background-image: url(../../../static/img/vector-32.svg);
   background-size: 100% 100%;
   height: 16px;
-  left: 111px;
+  left: 30px;
   position: absolute;
-  top: 0;
+  top: -58px;
   width: 58px;
 }
 
@@ -2723,7 +2738,7 @@
 
 .element-light .img-out-of-stars {
   height: 18px;
-  left: 15px;
+  left: -10px;
   position: absolute;
   top: 42px;
   width: 122px;
@@ -2766,12 +2781,11 @@
   font-size: 14.6px;
   font-weight: 500;
   height: 40px;
-  left: 147px;
+  left: 5px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 1042px;
-  width: 115px;
+  top: 1065px;
 }
 
 .element-light .the-winky-lux {
@@ -2780,12 +2794,11 @@
   font-size: 13.4px;
   font-weight: 400;
   height: 170px;
-  left: 15px;
+  left: 6px;
   letter-spacing: 0;
   line-height: 22px;
   position: absolute;
   top: 1103px;
-  width: 231px;
 }
 
 .element-light .text-wrapper-67 {
@@ -2794,12 +2807,12 @@
   font-size: 13.1px;
   font-weight: 400;
   height: 16px;
-  left: 0;
+  left: 243px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 1277px;
+  top: 1008px;
   width: 56px;
 }
 
@@ -2916,11 +2929,11 @@
   font-size: 14.8px;
   font-weight: 500;
   height: 40px;
-  left: 147px;
+  left: 5px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 1454px;
+  top: 1475px;
   width: 119px;
 }
 
@@ -2930,12 +2943,11 @@
   font-size: 13.1px;
   font-weight: 400;
   height: 38px;
-  left: 15px;
+  left: 6px;
   letter-spacing: 0;
   line-height: 22px;
   position: absolute;
   top: 1515px;
-  width: 218px;
 }
 
 .element-light .text-wrapper-72 {
@@ -2944,12 +2956,12 @@
   font-size: 13.4px;
   font-weight: 400;
   height: 16px;
-  left: 0;
+  left: 243px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 1557px;
+  top: 1421px;
   white-space: nowrap;
   width: 60px;
 }
@@ -2999,12 +3011,11 @@
   font-size: 15.6px;
   font-weight: 500;
   height: 62px;
-  left: 147px;
+  left: 5px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 1734px;
-  width: 96px;
+  top: 1755px;
 }
 
 .element-light .love-the-amount-of {
@@ -3013,7 +3024,7 @@
   font-size: 13.4px;
   font-weight: 400;
   height: 38px;
-  left: 15px;
+  left: 8px;
   letter-spacing: 0;
   line-height: 22px;
   position: absolute;
@@ -3027,12 +3038,12 @@
   font-size: 13.4px;
   font-weight: 400;
   height: 16px;
-  left: 0;
+  left: 243px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 1859px;
+  top: 1701px;
   white-space: nowrap;
   width: 60px;
 }
@@ -3082,12 +3093,11 @@
   font-size: 15.2px;
   font-weight: 500;
   height: 62px;
-  left: 147px;
+  left: 5px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 2036px;
-  width: 107px;
+  top: 2060px;
 }
 
 .element-light .the-white-tea-tinted {
@@ -3096,7 +3106,7 @@
   font-size: 13.2px;
   font-weight: 400;
   height: 60px;
-  left: 15px;
+  left: 7px;
   letter-spacing: 0;
   line-height: 22px;
   position: absolute;
@@ -3110,12 +3120,12 @@
   font-size: 13.5px;
   font-weight: 400;
   height: 16px;
-  left: 0;
+  left: 243px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 2183px;
+  top: 2002px;
   white-space: nowrap;
   width: 59px;
 }
@@ -3165,11 +3175,11 @@
   font-size: 13.6px;
   font-weight: 500;
   height: 40px;
-  left: 147px;
+  left: 5px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 2360px;
+  top: 2384px;
   width: 120px;
 }
 
@@ -3179,12 +3189,11 @@
   font-size: 13.4px;
   font-weight: 400;
   height: 148px;
-  left: 15px;
+  left: 5px;
   letter-spacing: 0;
   line-height: 22px;
   position: absolute;
   top: 2421px;
-  width: 226px;
 }
 
 .element-light .text-wrapper-78 {
@@ -3193,12 +3202,12 @@
   font-size: 13.4px;
   font-weight: 400;
   height: 16px;
-  left: 0;
+  left: 243px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 2573px;
+  top: 2326px;
   white-space: nowrap;
   width: 60px;
 }
@@ -3352,7 +3361,8 @@
   object-fit: cover;
   position: absolute;
   top: 35px;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .background-11 {
@@ -3361,7 +3371,8 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .container-10 {
@@ -3533,8 +3544,9 @@
   height: 778px;
   left: 0;
   position: absolute;
-  top: 7372px;
-  width: 390px;
+  top: 7796px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .container-22 {
@@ -3593,7 +3605,9 @@
 
 .element-light .input-email::before {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
+  mask-composite: exclude;
   background: linear-gradient(
         to bottom right,
         rgba(255, 255, 255, 1) 0%,
@@ -3854,7 +3868,8 @@
   left: 5px;
   position: absolute;
   top: 346px;
-  width: 380px;
+  width: calc(100% - 10px);
+  max-width: 380px;
 }
 
 .element-light .text-wrapper-89 {
@@ -3909,7 +3924,8 @@
   left: 5px;
   position: absolute;
   top: 388px;
-  width: 380px;
+  width: calc(100% - 10px);
+  max-width: 380px;
 }
 
 .element-light .text-wrapper-90 {
@@ -3932,7 +3948,8 @@
   left: 5px;
   position: absolute;
   top: 430px;
-  width: 380px;
+  width: calc(100% - 10px);
+  max-width: 380px;
 }
 
 .element-light .text-wrapper-91 {
@@ -4096,7 +4113,8 @@
   overflow-y: scroll;
   position: absolute;
   top: 0;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .dialog-FULLSCREEN::-webkit-scrollbar {
@@ -4106,7 +4124,8 @@
 
 .element-light .overlap-wrapper {
   height: 780px;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .overlap-15 {
@@ -4125,7 +4144,8 @@
   overflow: scroll;
   position: absolute;
   top: 0;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .form-3::-webkit-scrollbar {
@@ -4136,7 +4156,8 @@
 .element-light .container-24 {
   height: 755px;
   position: relative;
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
 }
 
 .element-light .winky-lux {
@@ -4537,7 +4558,8 @@
   left: 2px;
   position: absolute;
   top: 2617px;
-  width: 386px;
+  width: calc(100% - 4px);
+  max-width: 386px;
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -4933,7 +4955,6 @@
   }
 }
 
-
 .sticky-cart {
   position: fixed;
   bottom: 0;
@@ -5039,7 +5060,6 @@
   }
 }
 
-
 .nav-container {
   position: relative;
   z-index: 1000;
@@ -5069,3 +5089,239 @@
   background-color: #5e675f;
 }
 
+/* Additional responsive fixes to prevent horizontal scrolling */
+@media (min-width: 391px) {
+  .element-light {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .element-light {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .element-light .container,
+  .element-light .form,
+  .element-light .tablist {
+    left: 2px;
+    width: calc(100vw - 4px);
+  }
+}
+
+/* Ensure no element can cause horizontal overflow */
+.element-light * {
+  max-width: 100%;
+}
+
+/* === Science Behind That Glow (within section-3) === */
+.section-3 {
+  /* keep existing absolute layout; ensure enough height to fit new content */
+  min-height: 980px;
+}
+
+.science-behind-glow {
+  padding: 24px 16px;
+  background: #fff;
+}
+
+.science-behind-glow .sbg-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.science-behind-glow .sbg-title {
+  font-family: "Inter", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333029;
+  margin: 0 0 6px;
+}
+
+.science-behind-glow .sbg-subtitle {
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.science-behind-glow .sbg-intro {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 18px 0 22px;
+}
+
+.science-behind-glow .sbg-intro-copy {
+  flex: 1;
+}
+
+.science-behind-glow .sbg-intro-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #333029;
+}
+
+.science-behind-glow .sbg-intro-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+}
+
+.science-behind-glow .sbg-intro-visual {
+  flex-shrink: 0;
+}
+
+.science-behind-glow .sbg-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.science-behind-glow .sbg-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.science-behind-glow .sbg-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.science-behind-glow .sbg-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 6px 0 8px;
+  color: #333029;
+  text-align: center;
+}
+.science-behind-glow .sbg-line {
+  font-size: 12.5px;
+  color: #555;
+  margin: 4px 0;
+}
+.science-behind-glow .sbg-line strong {
+  color: #333029;
+}
+
+.science-behind-glow .sbg-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 4px auto 0;
+  display: table;
+}
+.sbg-badge-anti {
+  background: #ffe4e8;
+  color: #ff6fa3;
+}
+.sbg-badge-hydra {
+  background: #e6f7ff;
+  color: #00bfff;
+}
+.sbg-badge-antiox {
+  background: #fff4cc;
+  color: #cc9900;
+}
+.sbg-badge-smooth {
+  background: #f2fff2;
+  color: #28a745;
+}
+
+.science-behind-glow .sbg-callout {
+  background: linear-gradient(135deg, #fff9e6, #fffbea);
+  border: 1px solid #ffe58f;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  margin: 18px 0;
+}
+.science-behind-glow .sbg-callout-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333029;
+  margin: 8px 0 12px;
+}
+.science-behind-glow .sbg-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.science-behind-glow .sbg-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.science-behind-glow .sbg-num {
+  font-size: 18px;
+  font-weight: 800;
+  color: #cc9900;
+}
+.science-behind-glow .sbg-lbl {
+  font-size: 10px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.science-behind-glow .sbg-compare {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 14px;
+}
+.science-behind-glow .sbg-compare-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333029;
+  margin: 0 0 12px;
+}
+.science-behind-glow .sbg-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.science-behind-glow .sbg-col {
+  border-radius: 12px;
+  padding: 12px;
+}
+.science-behind-glow .sbg-col-other {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+}
+.science-behind-glow .sbg-col-peeper {
+  background: #f0fff4;
+  border: 1px solid #c6f6d5;
+}
+.science-behind-glow .sbg-col-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.science-behind-glow .sbg-list {
+  margin: 0;
+  padding-left: 14px;
+  font-size: 12.5px;
+  color: #555;
+}
+
+@media (min-width: 390px) {
+  .science-behind-glow .sbg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .science-behind-glow .sbg-compare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -112,7 +112,7 @@ export const ElementLight = () => {
                   <div className="price-section">
                     <div className="price">$18.00</div>
                     <div className="reviews-count">
-                      ⭐⭐⭐⭐⭐ 966 Reviews | Afterpay Available
+                      ⭐⭐⭐⭐⭐ <b>4.8</b> 966 Reviews | Afterpay Available
                     </div>
                   </div>
 
@@ -734,93 +734,262 @@ export const ElementLight = () => {
               </section>
 
               <div className="section-3">
-                <div className="container-6">
-                  <div className="heading-get-to">
-                    GET TO KNOW
-                    <br />
-                    THE KEY
-                    <br />
-                    INGREDIENTS
+                <section className="science-behind-glow">
+                  <div className="sbg-header">
+                    <h2 className="sbg-title">The Science Behind That Glow</h2>
+                    <p className="sbg-subtitle">
+                      Premium ingredients that deliver the ‘10 hours of sleep’
+                      effect
+                    </p>
                   </div>
 
-                  <div className="overlap-group-8">
-                    <div className="strong-collagen">Collagen</div>
-
-                    <div className="background-5" />
-                  </div>
-
-                  <p className="hydrolyzed-collagen">
-                    <span className="text-wrapper-35">
-                      (Hydrolyzed Collagen)
-                    </span>
-
-                    <span className="text-wrapper-36">: </span>
-
-                    <span className="text-wrapper-35">Helps improve</span>
-                  </p>
-
-                  <p className="skin-elasticity-and">
-                    skin elasticity and reduce the appearance of
-                    <br />
-                    wrinkles while plumping skin for a youthful
-                    <br />
-                    appearance
-                  </p>
-
-                  <div className="strong-hyaluronic-wrapper">
-                    <div className="strong-hyaluronic">Hyaluronic acid</div>
-                  </div>
-
-                  <p className="strong">
-                    <span className="text-wrapper-37">:</span>
-
-                    <span className="text-wrapper-36">&nbsp;</span>
-
-                    <span className="text-wrapper-35">
-                      Helps reduce the look of fine lines
-                    </span>
-                  </p>
-
-                  <p className="and-wrinkles-by">
-                    and wrinkles by increasing your skin’s ability to
-                    <br />
-                    retain moisture to promote a hydrated, supple 
-                    <br />
-                    appearance
-                  </p>
-
-                  <p className="strong-glycerin">
-                    <span className="span">Glycerin: </span>
-
-                    <span className="text-wrapper-3">
-                      Helps prevent dryness by attracting
-                      <br />
-                      moisture to the surface layer of the skin
-                    </span>
-                  </p>
-
-                  <div className="strong-vitamin-e-wrapper">
-                    <div className="strong-vitamin-e">Vitamin E</div>
-                  </div>
-
-                  <div className="overlap-6">
-                    <div className="text-wrapper-38">(Tocopherol)</div>
-
-                    <div className="background-6">
-                      <div className="text-wrapper-39">:</div>
+                  <div className="sbg-intro">
+                    <div className="sbg-intro-copy">
+                      <h3 className="sbg-intro-title">
+                        More Than Just Coverage
+                      </h3>
+                      <p className="sbg-intro-text">
+                        While other concealers just sit on top of your skin,
+                        Peeper Perfect works <em>with</em> your skin. Each
+                        ingredient is carefully chosen to not only conceal but
+                        actually improve your skin while you wear it.
+                      </p>
+                    </div>
+                    <div className="sbg-intro-visual" aria-hidden="true">
+                      <svg
+                        width="110"
+                        height="110"
+                        viewBox="0 0 120 120"
+                        className="sbg-heart"
+                      >
+                        <circle
+                          cx="60"
+                          cy="60"
+                          r="50"
+                          fill="#FFD1DC"
+                          opacity="0.9"
+                        />
+                        <path
+                          d="M60 36 C50 46, 46 66, 60 78 C74 66, 70 46, 60 36 Z"
+                          fill="#FF69B4"
+                        />
+                        <text
+                          x="60"
+                          y="104"
+                          textAnchor="middle"
+                          fontSize="10"
+                          fill="#FF69B4"
+                        >
+                          Skincare + Makeup
+                        </text>
+                      </svg>
                     </div>
                   </div>
 
-                  <div className="text-wrapper-40">
-                    Moisturizes and conditions
-                  </div>
-                </div>
+                  <div className="sbg-grid">
+                    <article className="sbg-card">
+                      <div className="sbg-icon">
+                        <svg width="36" height="36" viewBox="0 0 48 48">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="20"
+                            fill="#FFE4E8"
+                            stroke="#FF6FA3"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M16 24 Q20 16, 24 24 Q28 16, 32 24 Q28 32, 24 24 Q20 32, 16 24"
+                            fill="#FF6FA3"
+                          />
+                        </svg>
+                      </div>
+                      <span className="sbg-badge sbg-badge-anti">
+                        Anti-Aging
+                      </span>
+                      <h4 className="sbg-name">Hydrolyzed Collagen</h4>
+                      <p className="sbg-line">
+                        <strong>What it does:</strong> Plumps and firms delicate under-eye skin for that youthful, well-rested appearance.
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Why you’ll love it:</strong> Reduces the appearance of fine lines while giving you instant coverage. It's like a mini eye treatment every time you apply your concealer!
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Glow Factor:</strong> Creates natural skin plumpness for healthy radiance
+                      </p>
+                    </article>
 
-                <div className="overlay-wrapper">
-                  <div className="overlay">
-                    <div className="winky-lux-image-2" />
+                    <article className="sbg-card">
+                      <div className="sbg-icon">
+                        <svg width="36" height="36" viewBox="0 0 48 48">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="20"
+                            fill="#E6F7FF"
+                            stroke="#00BFFF"
+                            strokeWidth="2"
+                          />
+                          <circle cx="18" cy="20" r="3" fill="#00BFFF" />
+                          <circle cx="30" cy="20" r="4" fill="#00BFFF" />
+                          <circle cx="24" cy="30" r="5" fill="#00BFFF" />
+                        </svg>
+                      </div>
+                      <span className="sbg-badge sbg-badge-hydra">
+                        Hydration
+                      </span>
+                      <h4 className="sbg-name">Hyaluronic Acid</h4>
+                      <p className="sbg-line">
+                        <strong>What it does:</strong> Holds up to 1000x its weight in water, keeping your under-eye area hydrated and smooth.
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Why you’ll love it:</strong> No more cakey, dry
+                        concealer!
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Glow Factor:</strong> Dewy, hydrated finish that catches light beautifully
+                      </p>
+                    </article>
+
+                    <article className="sbg-card">
+                      <div className="sbg-icon">
+                        <svg width="36" height="36" viewBox="0 0 48 48">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="20"
+                            fill="#FFF9E6"
+                            stroke="#FFC400"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M24 10 L26 18 L34 16 L28 22 L35 26 L27 26 L29 36 L24 30 L19 36 L21 26 L13 26 L20 22 L14 16 L22 18 Z"
+                            fill="#FFC400"
+                          />
+                        </svg>
+                      </div>
+                      <span className="sbg-badge sbg-badge-antiox">
+                        Antioxidant
+                      </span>
+                      <h4 className="sbg-name">Vitamin E (Tocopherol)</h4>
+                      <p className="sbg-line">
+                        <strong>What it does:</strong> Protects and nourishes delicate under-eye skin while providing moisture and conditioning.
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Why you’ll love it:</strong> Prevents irritation and keeps your skin healthy, even with daily concealer use.
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Glow Factor:</strong> Healthy skin foundation
+                        for natural luminosity
+                      </p>
+                    </article>
+
+                    <article className="sbg-card">
+                      <div className="sbg-icon">
+                        <svg width="36" height="36" viewBox="0 0 48 48">
+                          <circle
+                            cx="24"
+                            cy="24"
+                            r="20"
+                            fill="#F2FFF2"
+                            stroke="#28A745"
+                            strokeWidth="2"
+                          />
+                          <path
+                            d="M16 24 Q20 16, 24 20 Q28 16, 32 24 Q28 32, 24 28 Q20 32, 16 24"
+                            fill="#28A745"
+                          />
+                          <circle cx="24" cy="24" r="4" fill="#98FB98" />
+                        </svg>
+                      </div>
+                      <span className="sbg-badge sbg-badge-smooth">
+                        Smooth Application
+                      </span>
+                      <h4 className="sbg-name">Glycerin</h4>
+                      <p className="sbg-line">
+                        <strong>What it does:</strong> Creates that ultra-smooth, seamless application by attracting moisture to your skin's surface.
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Why you’ll love it:</strong> This is why the concealer "blends like a dream" - it literally helps the formula melt into your skin!
+                      </p>
+                      <hr />
+                      <p className="sbg-line">
+                        <strong>Glow Factor:</strong> Smooth canvas for even
+                        light reflection
+                      </p>
+                    </article>
                   </div>
-                </div>
+
+                  <div className="sbg-callout">
+                    <div className="sbg-callout-icon" aria-hidden="true">
+                      <svg width="54" height="54" viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="14" fill="#FFD54D" />
+                        <path
+                          d="M30 4 L31.5 19 M56 30 L41 28.5 M30 56 L28.5 41 M4 30 L19 31.5"
+                          stroke="#FFD54D"
+                          strokeWidth="3"
+                        />
+                        <path
+                          d="M45 15 L35 25 M45 45 L35 35 M15 45 L25 35 M15 15 L25 25"
+                          stroke="#FFD54D"
+                          strokeWidth="2"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="sbg-callout-title">
+                      The Secret to ‘Look at That Glow’
+                    </h3>
+                    <p>These four powerhouse ingredients work together to create that enviable glow everyone's talking about. It's not just makeup—it's skincare that makes your skin look naturally radiant and healthy, like you actually got those 10 hours of sleep!</p>
+                    <br />
+                    <div className="sbg-stats">
+                      <div className="sbg-stat">
+                        <span className="sbg-num">24hrs</span>
+                        <span className="sbg-lbl">Hydration</span>
+                      </div>
+                      <div className="sbg-stat">
+                        <span className="sbg-num">0%</span>
+                        <span className="sbg-lbl">Creasing</span>
+                      </div>
+                      <div className="sbg-stat">
+                        <span className="sbg-num">100%</span>
+                        <span className="sbg-lbl">Coverage</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="sbg-compare">
+                    <h3 className="sbg-compare-title">
+                      Why Premium Ingredients Matter
+                    </h3>
+                    <div className="sbg-compare-grid">
+                      <div className="sbg-col sbg-col-other">
+                        <h4 className="sbg-col-title">Other Concealers</h4>
+                        <ul className="sbg-list">
+                          <li>❌ Sit on skin</li>
+                          <li>❌ Cakey finish</li>
+                          <li>❌ Dry out skin</li>
+                          <li>❌ Need touch-ups</li>
+                        </ul>
+                      </div>
+                      <div className="sbg-col sbg-col-peeper">
+                        <h4 className="sbg-col-title">Peeper Perfect</h4>
+                        <ul className="sbg-list">
+                          <li>✅ Works with skin</li>
+                          <li>✅ Seamless finish</li>
+                          <li>✅ Hydrates skin</li>
+                          <li>✅ All-day confidence</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
 
               <div className="section-4">
@@ -839,11 +1008,7 @@ export const ElementLight = () => {
 
               <div className="section-region">
                 <div className="overlap-7">
-                  <div className="customer-reviews">
-                    Customer
-                    <br />
-                    Reviews
-                  </div>
+                  <div className="customer-reviews">Customer Reviews</div>
 
                   <div className="link-trusted-reviews">
                     <div className="text-wrapper-41">Trusted reviews by</div>
