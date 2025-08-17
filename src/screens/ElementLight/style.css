@@ -1018,7 +1018,7 @@ body {
   height: 1509px;
   left: 5px;
   position: absolute;
-  top: 560px;
+  top: 814px;
   width: calc(100% - 10px);
   max-width: 380px;
 }
@@ -1701,7 +1701,7 @@ body {
   height: 482px;
   left: 0;
   position: absolute;
-  top: 2077px;
+  top: 2327px;
   width: 100%;
   max-width: 390px;
 }
@@ -1908,9 +1908,9 @@ body {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 7.7px;
-  font-weight: 400;
+  font-weight: bold;
   height: 12px;
-  left: 9px;
+  
   letter-spacing: 0.2px;
   line-height: 12px;
   position: absolute;
@@ -4465,7 +4465,7 @@ body {
   height: 778px;
   left: 0;
   position: absolute;
-  top: 14578px;
+  top: 14830px;
   width: 100%;
   max-width: 390px;
 }
@@ -5692,7 +5692,7 @@ body {
   }
 
   .element-light .hero-video-container {
-    height: 400px;
+    height: 650px;
     left: 0px;
   }
 
