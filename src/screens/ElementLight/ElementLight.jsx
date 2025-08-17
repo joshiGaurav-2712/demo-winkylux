@@ -184,19 +184,19 @@ export const ElementLight = () => {
                           alt="Before and After comparison showing dramatic improvement in under-eye area"
                           className="before-after-image"
                         />
-                      </div>
-                      <div className="labels-below">
-                        <div className="before-label">
-                          <span className="label-text">BEFORE</span>
-                          <span className="label-description">
-                            Dark circles & tired eyes
-                          </span>
-                        </div>
-                        <div className="after-label">
-                          <span className="label-text">AFTER</span>
-                          <span className="label-description">
-                            Bright & refreshed
-                          </span>
+                        <div className="labels-below">
+                          <div className="before-label">
+                            <span className="label-text">BEFORE</span>
+                            <span className="label-description">
+                              Dark circles & tired eyes
+                            </span>
+                          </div>
+                          <div className="after-label">
+                            <span className="label-text">AFTER</span>
+                            <span className="label-description">
+                              Bright & refreshed
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -392,7 +392,7 @@ export const ElementLight = () => {
 
               <div className="form">
                 <div className="tolstoy-stories">
-                  <div className="heading-tolstoy">See It In Action</div>
+                  <h2 className="heading-tolstoy">See It In Action</h2>
 
                   <img
                     className="group-tolstoy"
@@ -408,7 +408,7 @@ export const ElementLight = () => {
                     <div className="horizontal-divider-2" />
                   </div>
 
-                  <div className="text-wrapper-14">What It Is</div>
+                  <h3 className="text-wrapper-14">What It Is</h3>
                 </div>
 
                 <div className="details-slot-summary-2">
@@ -418,7 +418,7 @@ export const ElementLight = () => {
                     <div className="horizontal-divider-2" />
                   </div>
 
-                  <div className="why-it-s-special">Why It&#39;s Special</div>
+                  <h3 className="why-it-s-special">Why It&#39;s Special</h3>
                 </div>
 
                 <div className="details-slot-summary-3">
@@ -428,7 +428,7 @@ export const ElementLight = () => {
                     <div className="horizontal-divider-2" />
                   </div>
 
-                  <div className="text-wrapper-15">How To Use It</div>
+                  <h3 className="text-wrapper-15">How To Use It</h3>
                 </div>
 
                 <div className="details-slot-summary-4">
@@ -438,7 +438,7 @@ export const ElementLight = () => {
                     <div className="horizontal-divider-2" />
                   </div>
 
-                  <div className="text-wrapper-16">Shade Information</div>
+                  <h3 className="text-wrapper-16">Shade Information</h3>
                 </div>
 
                 <div className="details-slot-summary-5">
@@ -448,7 +448,7 @@ export const ElementLight = () => {
                     <div className="horizontal-divider-2" />
                   </div>
 
-                  <div className="text-wrapper-17">Ingredients</div>
+                  <h3 className="text-wrapper-17">Ingredients</h3>
                 </div>
 
                 <div className="details-slot-summary-6">
@@ -458,7 +458,7 @@ export const ElementLight = () => {
                     <div className="horizontal-divider-2" />
                   </div>
 
-                  <div className="text-wrapper-18">FAQS</div>
+                  <h3 className="text-wrapper-18">FAQS</h3>
                 </div>
 
                 <img
@@ -491,7 +491,7 @@ export const ElementLight = () => {
                   src="/img/product-description-gluten-svg.svg"
                 />
 
-                <div className="heading-pairs-well">Pairs Well With</div>
+                <h3 className="heading-pairs-well">Pairs Well With</h3>
 
                 <div className="link-2" />
 
@@ -1448,7 +1448,7 @@ export const ElementLight = () => {
                 <img
                   className="img-out-of"
                   alt="Img out of"
-                  src="/img/img-4-7-out-of-5-stars.svg"
+                  src="static\4.7_star.jpg"
                 />
 
                 <div className="text-wrapper-42">966 reviews</div>
@@ -1472,7 +1472,7 @@ export const ElementLight = () => {
                     <img
                       className="vector-11"
                       alt="Vector"
-                      src="/img/vector-34.svg"
+                      src="/one_star.jpg"
                     />
                   </div>
 
@@ -1490,7 +1490,7 @@ export const ElementLight = () => {
                     <img
                       className="vector-11"
                       alt="Vector"
-                      src="/img/vector-35.svg"
+                      src="/one_star.jpg"
                     />
                   </div>
 
@@ -1508,7 +1508,7 @@ export const ElementLight = () => {
                     <img
                       className="vector-11"
                       alt="Vector"
-                      src="/img/vector-36.svg"
+                      src="/one_star.jpg"
                     />
                   </div>
 
@@ -1526,7 +1526,7 @@ export const ElementLight = () => {
                     <img
                       className="vector-11"
                       alt="Vector"
-                      src="/img/vector-37.svg"
+                      src="/one_star.jpg"
                     />
                   </div>
 
@@ -1544,7 +1544,7 @@ export const ElementLight = () => {
                     <img
                       className="vector-11"
                       alt="Vector"
-                      src="/img/vector-38.svg"
+                      src="/one_star.jpg"
                     />
                   </div>
 
@@ -1684,7 +1684,7 @@ export const ElementLight = () => {
                     <img
                       className="img-out-of-stars"
                       alt="Img out of stars"
-                      src="/img/img-5-out-of-5-stars-2.svg"
+                      src="/all_star.jpg"
                     />
                   </div>
 
@@ -1758,7 +1758,7 @@ export const ElementLight = () => {
                     <img
                       className="img-out-of-stars"
                       alt="Img out of stars"
-                      src="/img/img-5-out-of-5-stars-4.svg"
+                      src="/all_star.jpg"
                     />
                   </div>
 
@@ -1822,7 +1822,7 @@ export const ElementLight = () => {
                     <img
                       className="img-out-of-stars"
                       alt="Img out of stars"
-                      src="/img/img-5-out-of-5-stars-1.svg"
+                      src="/all_star.jpg"
                     />
                   </div>
 
@@ -1888,7 +1888,7 @@ export const ElementLight = () => {
                     <img
                       className="img-out-of-stars"
                       alt="Img out of stars"
-                      src="/img/img-5-out-of-5-stars.svg"
+                      src="/all_star.jpg"
                     />
                   </div>
 
@@ -1956,7 +1956,7 @@ export const ElementLight = () => {
                     <img
                       className="img-out-of-stars"
                       alt="Img out of stars"
-                      src="/img/img-5-out-of-5-stars-3.svg"
+                      src="/all_star.jpg"
                     />
                   </div>
 
