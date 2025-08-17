@@ -96,19 +96,19 @@ export const ElementLight = () => {
         <div className="background">
           <div className="div">
             <div className="main">
+              {/* Product Title */}
+              <div className="product-title-section">
+                <h1 className="product-title">
+                  Peeper Perfect Under-Eye Concealer
+                </h1>
+              </div>
+
               {/* Hero Video Section */}
               <div className="hero-video-container">
                 <video className="hero-video" autoPlay muted loop playsInline>
                   <source src={Ad1} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              </div>
-
-              {/* Product Title */}
-              <div className="product-title-section">
-                <h1 className="product-title">
-                  Peeper Perfect Under-Eye Concealer
-                </h1>
               </div>
 
               {/* New Hero Section */}
@@ -166,143 +166,228 @@ export const ElementLight = () => {
 
               {/* Before/After Visual Section */}
               <section className="before-after">
-                <div className="section-spacer"></div>
-                <div className="premium-container">
+                <div className="container">
                   <div className="section-header">
-                    <span className="accent-line"></span>
                     <h2 className="section-title">
-                      Experience the Transformation
+                      The Transformation is Real
                     </h2>
                     <p className="section-subtitle">
-                      Your journey to effortless radiance
+                      See why millions are obsessed with this viral concealer
                     </p>
                   </div>
 
-                  <div className="transformation-showcase">
-                    <div className="showcase-step before-step">
-                      <div className="step-content">
-                        <div className="step-number">01</div>
-                        <div className="step-details">
-                          <h3>Before Application</h3>
-                          <div className="feature-list">
-                            <div className="feature-item">
-                              <div className="feature-icon">●</div>
-                              <div className="feature-text">
-                                <strong>Dark Circles</strong>
-                                <span>Signs of tiredness and stress</span>
-                              </div>
-                            </div>
-                            <div className="feature-item">
-                              <div className="feature-icon">●</div>
-                              <div className="feature-text">
-                                <strong>Uneven Texture</strong>
-                                <span>Visible puffiness and shadows</span>
-                              </div>
-                            </div>
-                            <div className="feature-item">
-                              <div className="feature-icon">●</div>
-                              <div className="feature-text">
-                                <strong>Dullness</strong>
-                                <span>Lack of natural radiance</span>
-                              </div>
-                            </div>
-                          </div>
+                  <div className="before-after-showcase">
+                    <div className="image-comparison">
+                      <div className="comparison-wrapper">
+                        <img
+                          src="/before_after.jpg"
+                          alt="Before and After comparison showing dramatic improvement in under-eye area"
+                          className="before-after-image"
+                        />
+                      </div>
+                      <div className="labels-below">
+                        <div className="before-label">
+                          <span className="label-text">BEFORE</span>
+                          <span className="label-description">
+                            Dark circles & tired eyes
+                          </span>
+                        </div>
+                        <div className="after-label">
+                          <span className="label-text">AFTER</span>
+                          <span className="label-description">
+                            Bright & refreshed
+                          </span>
                         </div>
                       </div>
                     </div>
 
-                    <div className="spinning-gradient-divider"></div>
-
-                    <div className="showcase-step after-step">
-                      <div className="step-content">
-                        <div className="step-number">02</div>
-                        <div className="step-details">
-                          <h3>After One Application</h3>
-                          <div className="feature-list">
-                            <div className="feature-item highlight">
-                              <div className="feature-icon">✧</div>
-                              <div className="feature-text">
-                                <strong>Flawless Coverage</strong>
-                                <span>Instantly brightened & even</span>
-                              </div>
-                            </div>
-                            <div className="feature-item highlight">
-                              <div className="feature-icon">✧</div>
-                              <div className="feature-text">
-                                <strong>Natural Finish</strong>
-                                <span>Seamlessly blended texture</span>
-                              </div>
-                            </div>
-                            <div className="feature-item highlight">
-                              <div className="feature-icon">✧</div>
-                              <div className="feature-text">
-                                <strong>Lasting Radiance</strong>
-                                <span>All-day luminous glow</span>
-                              </div>
-                            </div>
-                          </div>
+                    <div className="benefits-grid">
+                      <div className="benefit-card">
+                        <div className="benefit-icon">
+                          <svg width="32" height="32" viewBox="0 0 32 32">
+                            <circle
+                              cx="16"
+                              cy="16"
+                              r="14"
+                              fill="none"
+                              stroke="#ff6b9d"
+                              strokeWidth="2"
+                            />
+                            <path
+                              d="M10 16 L14 20 L22 12"
+                              stroke="#ff6b9d"
+                              strokeWidth="3"
+                              fill="none"
+                            />
+                          </svg>
                         </div>
+                        <h3>Instant Coverage</h3>
+                        <p>
+                          Covers dark circles completely without looking cakey
+                          or obvious
+                        </p>
+                      </div>
+
+                      <div className="benefit-card">
+                        <div className="benefit-icon">
+                          <svg width="32" height="32" viewBox="0 0 32 32">
+                            <circle
+                              cx="16"
+                              cy="16"
+                              r="8"
+                              fill="#ff6b9d"
+                              opacity="0.2"
+                            />
+                            <path
+                              d="M16 4 L16 8 M16 24 L16 28 M28 16 L24 16 M8 16 L4 16 M25.66 6.34 L22.83 9.17 M9.17 22.83 L6.34 25.66 M25.66 25.66 L22.83 22.83 M9.17 9.17 L6.34 6.34"
+                              stroke="#ff6b9d"
+                              strokeWidth="2"
+                            />
+                          </svg>
+                        </div>
+                        <h3>Natural Glow</h3>
+                        <p>
+                          Brightens your under-eye area for that "just got 10
+                          hours of sleep" look
+                        </p>
+                      </div>
+
+                      <div className="benefit-card">
+                        <div className="benefit-icon">
+                          <svg width="32" height="32" viewBox="0 0 32 32">
+                            <path
+                              d="M6 16 Q16 6 26 16 Q16 26 6 16"
+                              fill="none"
+                              stroke="#ff6b9d"
+                              strokeWidth="2"
+                            />
+                            <circle
+                              cx="11"
+                              cy="13"
+                              r="2"
+                              fill="#ff6b9d"
+                              opacity="0.5"
+                            />
+                            <circle
+                              cx="21"
+                              cy="13"
+                              r="2"
+                              fill="#ff6b9d"
+                              opacity="0.5"
+                            />
+                          </svg>
+                        </div>
+                        <h3>Seamless Blend</h3>
+                        <p>
+                          Blends effortlessly into your skin tone without any
+                          harsh lines
+                        </p>
+                      </div>
+
+                      <div className="benefit-card">
+                        <div className="benefit-icon">
+                          <svg width="32" height="32" viewBox="0 0 32 32">
+                            <path
+                              d="M8 12 L16 4 L24 12 L16 20 Z"
+                              fill="none"
+                              stroke="#ff6b9d"
+                              strokeWidth="2"
+                            />
+                            <circle
+                              cx="16"
+                              cy="12"
+                              r="3"
+                              fill="#ff6b9d"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M12 24 L20 24 M14 28 L18 28"
+                              stroke="#ff6b9d"
+                              strokeWidth="2"
+                            />
+                          </svg>
+                        </div>
+                        <h3>Long-Lasting</h3>
+                        <p>
+                          Stays put all day without creasing, even through long
+                          study sessions
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="transformation-stats">
+                      <div className="stat-item">
+                        <span className="stat-number">92%</span>
+                        <span className="stat-label">Say it looks natural</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-number">89%</span>
+                        <span className="stat-label">No creasing all day</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-number">96%</span>
+                        <span className="stat-label">Would recommend</span>
                       </div>
                     </div>
                   </div>
                 </div>
+              </section>
 
-                <section
-                  className="troopod-section"
-                  data-section="shoppable-videos"
-                >
-                  <div className="troopod-container">
-                    {/* Video carousel with lifestyle content */}
-                    <Swiper
-                      modules={[Navigation, EffectCoverflow]}
-                      className="troopod-swiper mySwiper"
-                      effect="coverflow"
-                      centeredSlides={true}
-                      slidesPerView={1.3}
-                      spaceBetween={30}
-                      navigation={{
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                      }}
-                      coverflowEffect={{
-                        rotate: 0,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: false,
-                      }}
-                      loop={false}
-                    >
-                      <SwiperSlide>
-                        <div className="video-card">
-                          <video autoPlay muted loop playsInline>
-                            <source src={Ad1} type="video/mp4" />
-                          </video>
-                        </div>
-                      </SwiperSlide>
+              <section
+                className="troopod-section"
+                data-section="shoppable-videos"
+              >
+                <div className="troopod-container">
+                  {/* Video carousel with lifestyle content */}
+                  <Swiper
+                    modules={[Navigation, EffectCoverflow]}
+                    className="troopod-swiper mySwiper"
+                    effect="coverflow"
+                    centeredSlides={true}
+                    slidesPerView={1.3}
+                    spaceBetween={30}
+                    navigation={{
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                    }}
+                    coverflowEffect={{
+                      rotate: 0,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 1,
+                      slideShadows: false,
+                    }}
+                    loop={false}
+                  >
+                    <SwiperSlide>
+                      <div className="video-card">
+                        <video autoPlay muted loop playsInline>
+                          <source src={Ad1} type="video/mp4" />
+                        </video>
+                      </div>
+                    </SwiperSlide>
 
-                      <SwiperSlide>
-                        <div className="video-card">
-                          <video autoPlay muted loop playsInline>
-                            <source src={Ad1} type="video/mp4" />
-                          </video>
-                        </div>
-                      </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="video-card">
+                        <video autoPlay muted loop playsInline>
+                          <source src={Ad1} type="video/mp4" />
+                        </video>
+                      </div>
+                    </SwiperSlide>
 
-                      <SwiperSlide>
-                        <div className="video-card">
-                          <video autoPlay muted loop playsInline>
-                            <source src={Ad1} type="video/mp4" />
-                          </video>
-                        </div>
-                      </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="video-card">
+                        <video autoPlay muted loop playsInline>
+                          <source src={Ad1} type="video/mp4" />
+                        </video>
+                      </div>
+                    </SwiperSlide>
 
-                      {/* Navigation arrows */}
-                      <div className="swiper-button-next"></div>
-                      <div className="swiper-button-prev"></div>
-                    </Swiper>
-                  </div>
-                </section>
+                    {/* Navigation arrows */}
+                    <div className="swiper-button-next"></div>
+                    <div className="swiper-button-prev"></div>
+                  </Swiper>
+                </div>
               </section>
 
               <div className="form">
@@ -880,20 +965,6 @@ export const ElementLight = () => {
                       </button>
                     </div>
                   </div>
-
-                  <div className="testimonial-cta">
-                    <h3>Ready to Join Them?</h3>
-                    <p>
-                      Over 966 customers have discovered their secret to looking
-                      refreshed
-                    </p>
-                    <button
-                      className="cta-button primary"
-                      data-action="add-to-cart-testimonials"
-                    >
-                      Get Your Concealer - $18.00
-                    </button>
-                  </div>
                 </div>
               </section>
 
@@ -1148,10 +1219,11 @@ export const ElementLight = () => {
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> Reduces the
-                        appearance of fine lines while giving you instant
-                        coverage. It's like a mini eye treatment every time you
-                        apply your concealer!
+                        <strong>Why you’ll love it:</strong>
+                        <br />
+                        <br /> Reduces the appearance of fine lines while giving
+                        you instant coverage. It's like a mini eye treatment
+                        every time you apply your concealer!
                       </p>
                       <hr />
                       <p className="sbg-line">
@@ -1187,8 +1259,8 @@ export const ElementLight = () => {
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> No more cakey, dry
-                        concealer!
+                        <strong>Why you’ll love it:</strong>
+                        <br /> No more cakey, dry concealer!
                       </p>
                       <hr />
                       <p className="sbg-line">
@@ -1225,9 +1297,9 @@ export const ElementLight = () => {
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> Prevents irritation
-                        and keeps your skin healthy, even with daily concealer
-                        use.
+                        <strong>Why you’ll love it:</strong> <br />
+                        Prevents irritation and keeps your skin healthy, even
+                        with daily concealer use.
                       </p>
                       <hr />
                       <p className="sbg-line">
@@ -1265,9 +1337,9 @@ export const ElementLight = () => {
                       </p>
                       <hr />
                       <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> This is why the
-                        concealer "blends like a dream" - it literally helps the
-                        formula melt into your skin!
+                        <strong>Why you’ll love it:</strong> <br />
+                        This is why the concealer "blends like a dream" - it
+                        literally helps the formula melt into your skin!
                       </p>
                       <hr />
                       <p className="sbg-line">
