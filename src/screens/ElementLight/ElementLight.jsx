@@ -912,6 +912,99 @@ useEffect(() => {
                 </div>
               </section>
 
+                {/* Coverage Claims Section */}
+                <section className="coverage-claims">
+                    <div className="container">
+                        <h2 className="section-title">All The Coverage, None of The Cakiness</h2>
+                        <p className="section-subtitle">The 4 promises that make this concealer go viral</p>
+                        
+                        <div className="claims-grid">
+                            <div className="claim-card" data-claim="coverage">
+                                <div className="claim-icon coverage-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40">
+                                        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" strokeWidth="2"/>
+                                        <path d="M12 20 L18 26 L28 14" stroke="currentColor" strokeWidth="3" fill="none"/>
+                                    </svg>
+                                </div>
+                                <h3>Full Coverage</h3>
+                                <p>Covers dark circles, blemishes, and imperfections without looking heavy or obvious</p>
+                                <div className="claim-proof">
+                                    <span className="proof-stat">100% Coverage</span>
+                                    <span className="proof-desc">Without the mask effect</span>
+                                </div>
+                            </div>
+                            
+                            <div className="claim-card" data-claim="glow">
+                                <div className="claim-icon glow-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40">
+                                        <circle cx="20" cy="20" r="10" fill="currentColor" opacity="0.3"/>
+                                        <path d="M20 2 L20 8 M20 32 L20 38 M38 20 L32 20 M8 20 L2 20 M33.14 6.86 L28.28 11.72 M11.72 28.28 L6.86 33.14 M33.14 33.14 L28.28 28.28 M11.72 11.72 L6.86 6.86" stroke="currentColor" strokeWidth="2"/>
+                                    </svg>
+                                </div>
+                                <h3>That Glow</h3>
+                                <p>Brightening effect that makes you look awake and radiant, not flat or dull</p>
+                                <div className="claim-proof">
+                                    <span className="proof-stat">Instant Radiance</span>
+                                    <span className="proof-desc">Like you slept 10 hours</span>
+                                </div>
+                            </div>
+                            
+                            <div className="claim-card" data-claim="blending">
+                                <div className="claim-icon blending-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40">
+                                        <path d="M5 20 Q20 5 35 20 Q20 35 5 20" fill="none" stroke="currentColor" strokeWidth="2"/>
+                                        <circle cx="15" cy="20" r="3" fill="currentColor" opacity="0.7"/>
+                                        <circle cx="25" cy="20" r="3" fill="currentColor" opacity="0.7"/>
+                                    </svg>
+                                </div>
+                                <h3>Seamless Blending</h3>
+                                <p>Melts into skin like it was meant to be there. No harsh lines or patches</p>
+                                <div className="claim-proof">
+                                    <span className="proof-stat">Effortless Application</span>
+                                    <span className="proof-desc">Blends like butter</span>
+                                </div>
+                            </div>
+                            
+                            <div className="claim-card" data-claim="longevity">
+                                <div className="claim-icon longevity-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40">
+                                        <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" strokeWidth="2"/>
+                                        <path d="M20 8 L20 20 L28 28" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                        <circle cx="20" cy="20" r="2" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <h3>Crease-Resistant</h3>
+                                <p>Holds up against fine lines and stays put all day without settling or fading</p>
+                                <div className="claim-proof">
+                                    <span className="proof-stat">All-Day Wear</span>
+                                    <span className="proof-desc">No touch-ups needed</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="claims-testimonial">
+                            <div className="testimonial-content">
+                                <blockquote>"All of the coverage, none of the cakiness. Look at that glow!"</blockquote>
+                                <cite>— From the Viral TikTok Video</cite>
+                            </div>
+                            <div className="social-proof-numbers">
+                                <div className="proof-number">
+                                    <span className="number">2.3M+</span>
+                                    <span className="proof_text">TikTok Views</span>
+                                </div>
+                                <div className="proof-number">
+                                    <span className="number">966+</span>
+                                    <span className="proof_text">5-Star Reviews</span>
+                                </div>
+                                <div className="proof-number">
+                                    <span className="number">96%</span>
+                                    <span className="proof_text">Would Recommend</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
               <div className="section-3">
                 <section className="science-behind-glow">
                   <div className="sbg-header">

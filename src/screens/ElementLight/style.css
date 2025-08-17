@@ -636,10 +636,14 @@ body {
   
   left: 5px;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   top: 0;
   width: calc(100% - 10px);
   max-width: 380px;
+}
+
+.proof_text{
+
 }
 
 .element-light .fair-peeper-perfect {
@@ -665,7 +669,7 @@ body {
   height: 1509px;
   left: 5px;
   position: absolute;
-  top: 510px;
+  top: 810px;
   width: calc(100% - 10px);
   max-width: 380px;
 }
@@ -1350,7 +1354,7 @@ body {
   height: 482px;
   left: 0;
   position: absolute;
-  top: 2039px;
+  top: 2339px;
   width: 100%;
   max-width: 390px;
 }
@@ -4122,7 +4126,7 @@ body {
   height: 778px;
   left: 0;
   position: absolute;
-  top: 9279px;
+  top: 11979px;
   width: 100%;
   max-width: 390px;
 }
@@ -4959,6 +4963,154 @@ body {
   font-weight: 600;
   margin: 0;
   letter-spacing: 0.3px;
+}
+
+/* Coverage Claims Section */
+.element-light .coverage-claims {
+  padding: 80px 0;
+  background: linear-gradient(to right, #fcf5f5, #fff9f9);
+  overflow: hidden;
+}
+
+.element-light .coverage-claims .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.element-light .coverage-claims .section-title {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.element-light .coverage-claims .section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 48px;
+}
+
+.element-light .claims-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.element-light .claim-card {
+  background: #ffffff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.element-light .claim-card:hover {
+  transform: translateY(-5px);
+}
+
+.element-light .claim-icon {
+  color: #ff6b6b;
+  margin-bottom: 24px;
+  display: inline-flex;
+  padding: 12px;
+  background: #fff5f5;
+  border-radius: 12px;
+}
+
+.element-light .claim-card h3 {
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.element-light .claim-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.element-light .claim-proof {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.element-light .proof-stat {
+  display: block;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.element-light .proof-desc {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.element-light .claims-testimonial {
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.element-light .testimonial-content blockquote {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  font-style: italic;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.element-light .testimonial-content cite {
+  color: #666;
+  font-style: normal;
+}
+
+.element-light .social-proof-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #eee;
+}
+
+.element-light .proof-number .number {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin-bottom: 8px;
+}
+
+.element-light .proof-number .label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .element-light .claims-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .element-light .claims-testimonial {
+    padding: 32px 24px;
+  }
+  
+  .element-light .social-proof-numbers {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 /* Hero Section - Matching existing theme */
