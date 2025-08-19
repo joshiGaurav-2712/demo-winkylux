@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./style.css";
+import "./glow-section.css";
 import Ad1 from "../../../public/hero-video.mp4";
 import Ad2 from "../../../public/vc2.mp4";
 import Ad3 from "../../../public/vc3.mp4";
@@ -117,7 +118,6 @@ export const ElementLight = () => {
               {/* New Hero Section */}
               <section className="hero">
                 <div className="hero-container">
-                  <div className="viral-badge">✨ As Seen on TikTok ✨</div>
                   <h1>Get That "I Just Got 10 Hours of Sleep" Look</h1>
                   <p className="sleep-benefit">
                     Even When You Stayed Up Till 3AM Studying
@@ -131,7 +131,7 @@ export const ElementLight = () => {
                   <div className="price-section">
                     <div className="price">$18.00</div>
                     <div className="reviews-count">
-                      ⭐⭐⭐⭐⭐ <b>4.8</b> 966 Reviews | Afterpay Available
+                      ⭐⭐⭐⭐⭐ <b>4.8</b>| 966 Reviews | Afterpay Available
                     </div>
                   </div>
 
@@ -140,7 +140,7 @@ export const ElementLight = () => {
                       className="cta-button primary"
                       data-action="add-to-cart"
                     >
-                      Add to Cart - $18.00
+                      ADD TO BAG - $18.00
                     </button>
                     <button
                       className="cta-button secondary"
@@ -168,7 +168,7 @@ export const ElementLight = () => {
               </section>
 
               {/* Before/After Visual Section */}
-              <section className="before-after">
+              <section id="before-after" className="before-after">
                 <div className="container">
                   <div className="section-header">
                     <h2 className="section-title">
@@ -201,135 +201,6 @@ export const ElementLight = () => {
                             </span>
                           </div>
                         </div>
-                      </div>
-                    </div>
-
-                    <div className="benefits-grid">
-                      <div className="benefit-card">
-                        <div className="benefit-icon">
-                          <svg width="32" height="32" viewBox="0 0 32 32">
-                            <circle
-                              cx="16"
-                              cy="16"
-                              r="14"
-                              fill="none"
-                              stroke="#ff6b9d"
-                              strokeWidth="2"
-                            />
-                            <path
-                              d="M10 16 L14 20 L22 12"
-                              stroke="#ff6b9d"
-                              strokeWidth="3"
-                              fill="none"
-                            />
-                          </svg>
-                        </div>
-                        <h3>Instant Coverage</h3>
-                        <p>
-                          Covers dark circles completely without looking cakey
-                          or obvious
-                        </p>
-                      </div>
-
-                      <div className="benefit-card">
-                        <div className="benefit-icon">
-                          <svg width="32" height="32" viewBox="0 0 32 32">
-                            <circle
-                              cx="16"
-                              cy="16"
-                              r="8"
-                              fill="#ff6b9d"
-                              opacity="0.2"
-                            />
-                            <path
-                              d="M16 4 L16 8 M16 24 L16 28 M28 16 L24 16 M8 16 L4 16 M25.66 6.34 L22.83 9.17 M9.17 22.83 L6.34 25.66 M25.66 25.66 L22.83 22.83 M9.17 9.17 L6.34 6.34"
-                              stroke="#ff6b9d"
-                              strokeWidth="2"
-                            />
-                          </svg>
-                        </div>
-                        <h3>Natural Glow</h3>
-                        <p>
-                          Brightens your under-eye area for that "just got 10
-                          hours of sleep" look
-                        </p>
-                      </div>
-
-                      <div className="benefit-card">
-                        <div className="benefit-icon">
-                          <svg width="32" height="32" viewBox="0 0 32 32">
-                            <path
-                              d="M6 16 Q16 6 26 16 Q16 26 6 16"
-                              fill="none"
-                              stroke="#ff6b9d"
-                              strokeWidth="2"
-                            />
-                            <circle
-                              cx="11"
-                              cy="13"
-                              r="2"
-                              fill="#ff6b9d"
-                              opacity="0.5"
-                            />
-                            <circle
-                              cx="21"
-                              cy="13"
-                              r="2"
-                              fill="#ff6b9d"
-                              opacity="0.5"
-                            />
-                          </svg>
-                        </div>
-                        <h3>Seamless Blend</h3>
-                        <p>
-                          Blends effortlessly into your skin tone without any
-                          harsh lines
-                        </p>
-                      </div>
-
-                      <div className="benefit-card">
-                        <div className="benefit-icon">
-                          <svg width="32" height="32" viewBox="0 0 32 32">
-                            <path
-                              d="M8 12 L16 4 L24 12 L16 20 Z"
-                              fill="none"
-                              stroke="#ff6b9d"
-                              strokeWidth="2"
-                            />
-                            <circle
-                              cx="16"
-                              cy="12"
-                              r="3"
-                              fill="#ff6b9d"
-                              opacity="0.3"
-                            />
-                            <path
-                              d="M12 24 L20 24 M14 28 L18 28"
-                              stroke="#ff6b9d"
-                              strokeWidth="2"
-                            />
-                          </svg>
-                        </div>
-                        <h3>Long-Lasting</h3>
-                        <p>
-                          Stays put all day without creasing, even through long
-                          study sessions
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="transformation-stats">
-                      <div className="stat-item">
-                        <span className="stat-number">92%</span>
-                        <span className="stat-label">Say it looks natural</span>
-                      </div>
-                      <div className="stat-item">
-                        <span className="stat-number">89%</span>
-                        <span className="stat-label">No creasing all day</span>
-                      </div>
-                      <div className="stat-item">
-                        <span className="stat-number">96%</span>
-                        <span className="stat-label">Would recommend</span>
                       </div>
                     </div>
                   </div>
@@ -394,15 +265,7 @@ export const ElementLight = () => {
               </section>
 
               <div className="form">
-                <div className="tolstoy-stories">
-                  <h2 className="heading-tolstoy">See It In Action</h2>
-
-                  <img
-                    className="group-tolstoy"
-                    alt="Group tolstoy"
-                    src="/img/group-tolstoy-stories.svg"
-                  />
-                </div>
+               
 
                 <div className="details-slot-summary">
                   <div className="overlap-3">
@@ -509,7 +372,7 @@ export const ElementLight = () => {
                 <div className="text-wrapper-19">$22.00 USD</div>
 
                 <button className="button-2">
-                  <div className="text-wrapper-20">ADD TO CART</div>
+                  <div className="text-wrapper-20">ADD TO BAG</div>
                 </button>
 
                 <div className="link-3" />
@@ -529,7 +392,7 @@ export const ElementLight = () => {
                 />
 
                 <button className="button-3">
-                  <div className="text-wrapper-20">ADD TO CART</div>
+                  <div className="text-wrapper-20">ADD TO BAG</div>
                 </button>
               </div>
 
@@ -545,14 +408,14 @@ export const ElementLight = () => {
                     background: "#FFF",
                   }}
                 >
-                  <a href="#labdiamonds" className="breadcrum">
-                    Concealer
+                  <a href="#highlights" className="breadcrum">
+                    Highlights
                   </a>
-                  <a href="#naturalvslab" className="breadcrum">
-                    Complexion
+                  <a href="#before-after" className="breadcrum">
+                    Before/After
                   </a>
-                  <a href="#about" className="breadcrum">
-                    Skincare
+                  <a href="#ingredients" className="breadcrum">
+                    Ingredients
                   </a>
                   <a href="#reviews" className="breadcrum">
                     Reviews
@@ -730,7 +593,7 @@ export const ElementLight = () => {
                     />
 
                     <button className="add-to-cart-wrapper">
-                      <div className="add-to-cart-2">ADD TO CART</div>
+                      <div className="add-to-cart-2">ADD TO BAG</div>
                     </button>
                   </div>
 
@@ -972,7 +835,7 @@ export const ElementLight = () => {
               </section>
 
               {/* Coverage Claims Section */}
-              <section className="coverage-claims">
+              <section id="highlights" className="coverage-claims">
                 <div className="container">
                   <h2 className="section-title">
                     All The Coverage, None of The Cakiness
@@ -1140,7 +1003,7 @@ export const ElementLight = () => {
                 </div>
               </section>
 
-              <div className="section-3">
+              <div id="ingredients" className="section-3">
                 <section className="science-behind-glow">
                   <div className="sbg-header">
                     <h2 className="sbg-title">The Science Behind That Glow</h2>
@@ -1151,275 +1014,170 @@ export const ElementLight = () => {
                   </div>
 
                   <div className="sbg-intro">
-                    <div className="sbg-intro-copy">
-                      <h3 className="sbg-intro-title">
-                        More Than Just Coverage
-                      </h3>
-                      <p className="sbg-intro-text">
-                        While other concealers just sit on top of your skin,
-                        Peeper Perfect works <em>with</em> your skin. Each
-                        ingredient is carefully chosen to not only conceal but
-                        actually improve your skin while you wear it.
-                      </p>
-                    </div>
-                    <div className="sbg-intro-visual" aria-hidden="true">
-                      <svg
-                        width="110"
-                        height="110"
-                        viewBox="0 0 120 120"
-                        className="sbg-heart"
-                      >
-                        <circle
-                          cx="60"
-                          cy="60"
-                          r="50"
-                          fill="#FFD1DC"
-                          opacity="0.9"
-                        />
-                        <path
-                          d="M60 36 C50 46, 46 66, 60 78 C74 66, 70 46, 60 36 Z"
-                          fill="#FF69B4"
-                        />
-                        <text
-                          x="60"
-                          y="104"
-                          textAnchor="middle"
-                          fontSize="10"
-                          fill="#FF69B4"
-                        >
-                          Skincare + Makeup
-                        </text>
-                      </svg>
+                    <div className="sbg-intro-modern">
+                      <div className="sbg-intro-modern-visual" aria-hidden="true">
+                        <svg width="70" height="70" viewBox="0 0 70 70" className="sbg-heart-modern">
+                          <defs>
+                            <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                              <stop offset="0%" stopColor="#fff6fa" stopOpacity="1" />
+                              <stop offset="100%" stopColor="#FFD1DC" stopOpacity="0.7" />
+                            </radialGradient>
+                          </defs>
+                          <circle cx="35" cy="35" r="32" fill="url(#glowGrad)" />
+                          <path d="M35 22 C29 30, 27 44, 35 52 C43 44, 41 30, 35 22 Z" fill="#FF69B4" />
+                          <text x="35" y="65" textAnchor="middle" fontSize="7" fill="#c23a6d">Glow + Care</text>
+                        </svg>
+                      </div>
+                      <div className="sbg-intro-modern-copy">
+                        <h3 className="sbg-intro-modern-title">More Than Just Coverage</h3>
+                        <div className="sbg-intro-modern-divider"></div>
+                        <p className="sbg-intro-modern-text">
+                          <span style={{color:'#c23a6d',fontWeight:600}}>Skincare-powered radiance.</span> Peeper Perfect is designed to <b>nourish</b> and <b>improve</b> your skin, not just cover it up.
+                        </p>
+                      </div>
                     </div>
                   </div>
 
                   <div className="sbg-grid">
-                    <article className="sbg-card">
-                      <div className="sbg-icon">
-                        <svg width="36" height="36" viewBox="0 0 48 48">
-                          <circle
-                            cx="24"
-                            cy="24"
-                            r="20"
-                            fill="#FFE4E8"
-                            stroke="#FF6FA3"
-                            strokeWidth="2"
-                          />
-                          <path
-                            d="M16 24 Q20 16, 24 24 Q28 16, 32 24 Q28 32, 24 24 Q20 32, 16 24"
-                            fill="#FF6FA3"
-                          />
-                        </svg>
+                    <article className="sbg-card-modern">
+                      <div className="sbg-card-modern-icon" style={{background:'#ffe4ec'}}>
+                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#FFE4E8" stroke="#FF6FA3" strokeWidth="1.5"/><path d="M12 18 Q15 12, 18 18 Q21 12, 24 18 Q21 24, 18 18 Q15 24, 12 18" fill="#FF6FA3"/></svg>
                       </div>
-                      <span className="sbg-badge sbg-badge-anti">
-                        Anti-Aging
-                      </span>
-                      <h4 className="sbg-name">Hydrolyzed Collagen</h4>
-                      <p className="sbg-line">
-                        <strong>What it does:</strong> Plumps and firms delicate
-                        under-eye skin for that youthful, well-rested
-                        appearance.
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong>
-                        <br />
-                        <br /> Reduces the appearance of fine lines while giving
-                        you instant coverage. It's like a mini eye treatment
-                        every time you apply your concealer!
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Glow Factor:</strong> Creates natural skin
-                        plumpness for healthy radiance
-                      </p>
+                      <div className="sbg-card-modern-content">
+                        <div className="sbg-card-modern-title">Hydrolyzed Collagen</div>
+                        <div className="sbg-card-modern-desc">Firms and plumps for a youthful look.</div>
+                        <div className="sbg-card-modern-badge" style={{background:'#fff0f6',color:'#c23a6d'}}>Anti-Aging</div>
+                      </div>
                     </article>
-
-                    <article className="sbg-card">
-                      <div className="sbg-icon">
-                        <svg width="36" height="36" viewBox="0 0 48 48">
-                          <circle
-                            cx="24"
-                            cy="24"
-                            r="20"
-                            fill="#E6F7FF"
-                            stroke="#00BFFF"
-                            strokeWidth="2"
-                          />
-                          <circle cx="18" cy="20" r="3" fill="#00BFFF" />
-                          <circle cx="30" cy="20" r="4" fill="#00BFFF" />
-                          <circle cx="24" cy="30" r="5" fill="#00BFFF" />
-                        </svg>
+                    <article className="sbg-card-modern">
+                      <div className="sbg-card-modern-icon" style={{background:'#e6f7ff'}}>
+                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#E6F7FF" stroke="#00BFFF" strokeWidth="1.5"/><circle cx="13" cy="15" r="2" fill="#00BFFF"/><circle cx="23" cy="15" r="2.5" fill="#00BFFF"/><circle cx="18" cy="23" r="3" fill="#00BFFF"/></svg>
                       </div>
-                      <span className="sbg-badge sbg-badge-hydra">
-                        Hydration
-                      </span>
-                      <h4 className="sbg-name">Hyaluronic Acid</h4>
-                      <p className="sbg-line">
-                        <strong>What it does:</strong> Holds up to 1000x its
-                        weight in water, keeping your under-eye area hydrated
-                        and smooth.
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong>
-                        <br /> No more cakey, dry concealer!
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Glow Factor:</strong> Dewy, hydrated finish that
-                        catches light beautifully
-                      </p>
+                      <div className="sbg-card-modern-content">
+                        <div className="sbg-card-modern-title">Hyaluronic Acid</div>
+                        <div className="sbg-card-modern-desc">Deep hydration, smooth finish.</div>
+                        <div className="sbg-card-modern-badge" style={{background:'#e6f7ff',color:'#0099cc'}}>Hydration</div>
+                      </div>
                     </article>
-
-                    <article className="sbg-card">
-                      <div className="sbg-icon">
-                        <svg width="36" height="36" viewBox="0 0 48 48">
-                          <circle
-                            cx="24"
-                            cy="24"
-                            r="20"
-                            fill="#FFF9E6"
-                            stroke="#FFC400"
-                            strokeWidth="2"
-                          />
-                          <path
-                            d="M24 10 L26 18 L34 16 L28 22 L35 26 L27 26 L29 36 L24 30 L19 36 L21 26 L13 26 L20 22 L14 16 L22 18 Z"
-                            fill="#FFC400"
-                          />
-                        </svg>
+                    <article className="sbg-card-modern">
+                      <div className="sbg-card-modern-icon" style={{background:'#fff9e6'}}>
+                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#FFF9E6" stroke="#FFC400" strokeWidth="1.5"/><path d="M18 7 L19 13 L25 12 L20 16 L26 19 L20 19 L21 27 L18 22 L15 27 L16 19 L10 19 L16 16 L11 12 L17 13 Z" fill="#FFC400"/></svg>
                       </div>
-                      <span className="sbg-badge sbg-badge-antiox">
-                        Antioxidant
-                      </span>
-                      <h4 className="sbg-name">Vitamin E (Tocopherol)</h4>
-                      <p className="sbg-line">
-                        <strong>What it does:</strong> Protects and nourishes
-                        delicate under-eye skin while providing moisture and
-                        conditioning.
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> <br />
-                        Prevents irritation and keeps your skin healthy, even
-                        with daily concealer use.
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Glow Factor:</strong> Healthy skin foundation
-                        for natural luminosity
-                      </p>
+                      <div className="sbg-card-modern-content">
+                        <div className="sbg-card-modern-title">Vitamin E (Tocopherol)</div>
+                        <div className="sbg-card-modern-desc">Nourishes and protects skin.</div>
+                        <div className="sbg-card-modern-badge" style={{background:'#fffbe6',color:'#bfa100'}}>Antioxidant</div>
+                      </div>
                     </article>
-
-                    <article className="sbg-card">
-                      <div className="sbg-icon">
-                        <svg width="36" height="36" viewBox="0 0 48 48">
-                          <circle
-                            cx="24"
-                            cy="24"
-                            r="20"
-                            fill="#F2FFF2"
-                            stroke="#28A745"
-                            strokeWidth="2"
-                          />
-                          <path
-                            d="M16 24 Q20 16, 24 20 Q28 16, 32 24 Q28 32, 24 28 Q20 32, 16 24"
-                            fill="#28A745"
-                          />
-                          <circle cx="24" cy="24" r="4" fill="#98FB98" />
-                        </svg>
+                    <article className="sbg-card-modern">
+                      <div className="sbg-card-modern-icon" style={{background:'#f2fff2'}}>
+                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#F2FFF2" stroke="#28A745" strokeWidth="1.5"/><path d="M12 18 Q15 12, 18 15 Q21 12, 24 18 Q21 24, 18 21 Q15 24, 12 18" fill="#28A745"/><circle cx="18" cy="18" r="3" fill="#98FB98"/></svg>
                       </div>
-                      <span className="sbg-badge sbg-badge-smooth">
-                        Smooth Application
-                      </span>
-                      <h4 className="sbg-name">Glycerin</h4>
-                      <p className="sbg-line">
-                        <strong>What it does:</strong> Creates that
-                        ultra-smooth, seamless application by attracting
-                        moisture to your skin's surface.
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Why you’ll love it:</strong> <br />
-                        This is why the concealer "blends like a dream" - it
-                        literally helps the formula melt into your skin!
-                      </p>
-                      <hr />
-                      <p className="sbg-line">
-                        <strong>Glow Factor:</strong> Smooth canvas for even
-                        light reflection
-                      </p>
+                      <div className="sbg-card-modern-content">
+                        <div className="sbg-card-modern-title">Glycerin</div>
+                        <div className="sbg-card-modern-desc">Smooth, seamless application.</div>
+                        <div className="sbg-card-modern-badge" style={{background:'#f2fff2',color:'#28a745'}}>Smooth Application</div>
+                      </div>
                     </article>
                   </div>
+                   
+                  <section className="the-secret-to-glow minimal-glow-section" style={{maxWidth:'420px',margin:'25px auto',padding:'28px 20px',background:'#fff6fa',borderRadius:'1px',boxShadow:'0 2px 16px 0 rgba(255,111,163,0.08)',border:'1.5px solid #ffe4ec',textAlign:'center',position:'relative'}}>
+                    <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'16px'}}>
+                      <span style={{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'54px',height:'54px',background:'#fff',borderRadius:'50%',boxShadow:'0 2px 8px #ffe4ec',border:'1.5px solid #ff6ba3'}}>
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                          <circle cx="16" cy="16" r="14" fill="#fffbe7"/>
+                          <path d="M16 6 L16 26 M6 16 L26 16" stroke="#ff6ba3" strokeWidth="2.2" strokeLinecap="round"/>
+                          <circle cx="16" cy="16" r="4" fill="#ff6ba3"/>
+                        </svg>
+                      </span>
+                    </div>
+                    <h3 style={{fontWeight:700,fontSize:'1.35rem',color:'#c23a6d',marginBottom:'10px',letterSpacing:'-0.5px'}}>The Secret to <span style={{color:'#ff6ba3'}}>That Glow</span></h3>
+                    <div style={{fontSize:'1rem',color:'#4F5D75',marginBottom:'18px',lineHeight:1.5}}>
+                      Skincare-powered radiance. Effortless, healthy, luminous skin—every day.
+                    </div>
+                    <div style={{display:'flex',justifyContent:'space-between',gap:'10px',marginTop:'18px'}}>
+                      <div style={{flex:1,background:'#fff',borderRadius:'10px',padding:'10px 0',boxShadow:'0 1px 4px #ffe4ec',border:'1px solid #ffe4ec'}}>
+                        <div style={{fontWeight:700,color:'#ff6ba3',fontSize:'1.1rem'}}>24hrs</div>
+                        <div style={{fontSize:'0.65rem',color:'#b97a95',textTransform:'uppercase',letterSpacing:'0.5px'}}>Hydration</div>
+                      </div>
+                      <div style={{flex:1,background:'#fff',borderRadius:'10px',padding:'10px 0',boxShadow:'0 1px 4px #ffe4ec',border:'1px solid #ffe4ec'}}>
+                        <div style={{fontWeight:700,color:'#ff6ba3',fontSize:'1.1rem'}}>0%</div>
+                        <div style={{fontSize:'0.65rem',color:'#b97a95',textTransform:'uppercase',letterSpacing:'0.5px'}}>Creasing</div>
+                      </div>
+                      <div style={{flex:1,background:'#fff',borderRadius:'10px',padding:'10px 0',boxShadow:'0 1px 4px #ffe4ec',border:'1px solid #ffe4ec'}}>
+                        <div style={{fontWeight:700,color:'#ff6ba3',fontSize:'1.1rem'}}>100%</div>
+                        <div style={{fontSize:'0.65rem',color:'#b97a95',textTransform:'uppercase',letterSpacing:'0.5px'}}>Coverage</div>
+                      </div>
+                    </div>
+                  </section>
 
-                  <div className="sbg-callout">
-                    <div className="sbg-callout-icon" aria-hidden="true">
-                      <svg width="54" height="54" viewBox="0 0 60 60">
-                        <circle cx="30" cy="30" r="14" fill="#FFD54D" />
-                        <path
-                          d="M30 4 L31.5 19 M56 30 L41 28.5 M30 56 L28.5 41 M4 30 L19 31.5"
-                          stroke="#FFD54D"
-                          strokeWidth="3"
-                        />
-                        <path
-                          d="M45 15 L35 25 M45 45 L35 35 M15 45 L25 35 M15 15 L25 25"
-                          stroke="#FFD54D"
-                          strokeWidth="2"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="sbg-callout-title">
-                      The Secret to ‘Look at That Glow’
-                    </h3>
-                    <p>
-                      These four powerhouse ingredients work together to create
-                      that enviable glow everyone's talking about. It's not just
-                      makeup—it's skincare that makes your skin look naturally
-                      radiant and healthy, like you actually got those 10 hours
-                      of sleep!
-                    </p>
-                    <br />
-                    <div className="sbg-stats">
-                      <div className="sbg-stat">
-                        <span className="sbg-num">24hrs</span>
-                        <span className="sbg-lbl">Hydration</span>
+                  <section className="comparison-card">
+                    <header className="comparison-card__header">
+                      <h3 className="comparison-card__title">Why Premium Ingredients Matter</h3>
+                    </header>
+                    <div className="comparison-table">
+                      <div className="comparison-table__row comparison-table__row--head">
+                        <div className="comparison-table__cell comparison-table__cell--label"></div>
+                        <div className="comparison-table__cell comparison-table__cell--other">Other Concealers</div>
+                        <div className="comparison-table__cell comparison-table__cell--peeper">Peeper Perfect</div>
                       </div>
-                      <div className="sbg-stat">
-                        <span className="sbg-num">0%</span>
-                        <span className="sbg-lbl">Creasing</span>
+                      <div className="comparison-table__row">
+                        <div className="comparison-table__cell comparison-table__cell--label">Works with skin</div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--no" aria-label="No">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
+                          </span>
+                        </div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          </span>
+                        </div>
                       </div>
-                      <div className="sbg-stat">
-                        <span className="sbg-num">100%</span>
-                        <span className="sbg-lbl">Coverage</span>
+                      <div className="comparison-table__row comparison-table__row--alt">
+                        <div className="comparison-table__cell comparison-table__cell--label">Seamless, natural finish</div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--no" aria-label="No">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
+                          </span>
+                        </div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="sbg-compare">
-                    <h3 className="sbg-compare-title">
-                      Why Premium Ingredients Matter
-                    </h3>
-                    <div className="sbg-compare-grid">
-                      <div className="sbg-col sbg-col-other">
-                        <h4 className="sbg-col-title">Other Concealers</h4>
-                        <ul className="sbg-list">
-                          <li>❌ Sit on skin</li>
-                          <li>❌ Cakey finish</li>
-                          <li>❌ Dry out skin</li>
-                          <li>❌ Need touch-ups</li>
-                        </ul>
+                      <div className="comparison-table__row">
+                        <div className="comparison-table__cell comparison-table__cell--label">Hydrates & conditions</div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--no" aria-label="No">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
+                          </span>
+                        </div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          </span>
+                        </div>
                       </div>
-                      <div className="sbg-col sbg-col-peeper">
-                        <h4 className="sbg-col-title">Peeper Perfect</h4>
-                        <ul className="sbg-list">
-                          <li>✅ Works with skin</li>
-                          <li>✅ Seamless finish</li>
-                          <li>✅ Hydrates skin</li>
-                          <li>✅ All-day confidence</li>
-                        </ul>
+                      <div className="comparison-table__row comparison-table__row--alt">
+                        <div className="comparison-table__cell comparison-table__cell--label">All-day wear — minimal touch-ups</div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--no" aria-label="No">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
+                          </span>
+                        </div>
+                        <div className="comparison-table__cell">
+                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                    <footer className="comparison-card__footer">
+                      <span className="comparison-card__note">Premium actives (hyaluronic acid, collagen boosters, antioxidants) provide immediate coverage and long-term skin benefits.</span>
+                    </footer>
+                  </section>
                 </section>
               </div>
 
@@ -1437,7 +1195,7 @@ export const ElementLight = () => {
                 </div>
               </div>
 
-              <div className="section-region">
+              <div id="reviews" className="section-region">
                 <div className="overlap-7">
                   <div className="customer-reviews">Customer Reviews</div>
 
@@ -2275,13 +2033,6 @@ export const ElementLight = () => {
         </div>
       </div>
 
-      <div className="iframe">
-        <div className="html-body-button">
-          <div className="img-4">
-            <img className="vector-18" alt="Vector" src="/img/vector-80.svg" />
-          </div>
-        </div>
-      </div>
       <div className="sticky-cart">
         <button className="primary-cta">ADD TO BAG</button>
         <div className="slide-text-container">
