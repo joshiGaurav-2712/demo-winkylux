@@ -1,3 +1,92 @@
+.testimonial-card-modern {
+  background: linear-gradient(120deg, #fff6fa 0%, #fbe7f2 100%);
+  border-radius: 16px;
+  border: 1.5px solid #ffe4ec;
+  box-shadow: 0 2px 16px 0 rgba(255,111,163,0.07);
+  padding: 18px 16px 16px 16px;
+  margin: 0 6px;
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+  max-height: 210px;
+  height: 210px;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.18s;
+  position: relative;
+}
+.testimonial-card-modern:hover {
+  box-shadow: 0 8px 32px 0 rgba(255,111,163,0.13);
+  border-color: #ffe4ec;
+  transform: translateY(-3px) scale(1.018);
+}
+.testimonial-header-modern {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.reviewer-avatar-modern {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb3d6 0%, #ff6ba3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #ffe4ec;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.testimonial-text-modern {
+  color: #c23a6d;
+  font-size: 1.04rem;
+  font-family: var(--font-family-primary);
+  font-style: italic;
+  background: none;
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.testimonial-footer-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+.verified-badge-modern {
+  background: #e6f7ff;
+  color: #0099cc;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.4px;
+  border: 1px solid #b3e6fa;
+  text-transform: uppercase;
+}
+.usage-time-modern {
+  color: #b97a95;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 700px) {
+  .testimonial-card-modern {
+    padding: 12px 6px 10px 6px;
+    min-height: 120px;
+  }
+  .reviewer-avatar-modern {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  .testimonial-text-modern {
+    font-size: 0.98rem;
+  }
+}
 .science-behind-glow .sbg-intro-modern-divider {
   width: 36px;
   height: 3px;
@@ -6425,10 +6514,11 @@ body {
   border-radius: 12px;
   padding: 20px 16px;
   position: relative;
-  border: 2px solid #e8d5c4;
+  border:2px solid #ff6b9d !important;
   transition: all 0.3s ease;
   height: auto;
-  min-height: 200px;
+
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   margin: 0 5px;
@@ -6449,7 +6539,7 @@ body {
 
 .element-light .testimonial-card.expert-review {
   background: linear-gradient(135deg, #faeadf, #f5e5d8);
-  border: 2px solid #ffc107;
+  border: 2px solid #ff6b9d;
 }
 
 /* Testimonial Header */
@@ -6473,7 +6563,7 @@ body {
 }
 
 .element-light .expert-avatar {
-  background: linear-gradient(135deg, #ffc107, #ff8f00);
+  background: linear-gradient(135deg, #ff6b9d, #ff8a80);
   box-shadow: 0 2px 6px rgba(255, 193, 7, 0.3);
 }
 
@@ -6548,11 +6638,11 @@ body {
   border: 1px solid rgba(76, 175, 80, 0.3);
 }
 
-.element-light .expert-badge {
+/* .element-light .expert-badge {
   background: rgba(255, 193, 7, 0.15);
   color: #ef6c00;
   border: 1px solid rgba(255, 193, 7, 0.3);
-}
+} */
 
 .element-light .usage-time,
 .element-light .review-source {
@@ -6595,9 +6685,7 @@ body {
 
 .element-light .testimonial-prev:hover,
 .element-light .testimonial-next:hover {
-  background: #faeadf;
-  border-color: #ff6b9d;
-  color: #ff6b9d;
+  
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
 }
@@ -6669,10 +6757,10 @@ body {
 
 .element-light .testimonial-card.expert-review::after {
   content: "🏆 Expert";
-  position: absolute;
+    position: absolute;
   top: 8px;
   right: 12px;
-  background: linear-gradient(135deg, #ffc107, #ff8f00);
+  background: linear-gradient(135deg, #ff6b9d, #ff8a80);
   color: #ffffff;
   font-family: "Inter", Helvetica;
   font-size: 8px;
@@ -6680,7 +6768,7 @@ body {
   padding: 3px 6px;
   border-radius: 8px;
   letter-spacing: 0.2px;
-  box-shadow: 0 2px 6px rgba(255, 193, 7, 0.3);
+  box-shadow: 0 2px 6px rgba(255, 107, 157, 0.3);
 }
 
 /* Mobile responsive adjustments */

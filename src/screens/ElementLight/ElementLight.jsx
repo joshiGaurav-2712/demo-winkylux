@@ -649,126 +649,97 @@ export const ElementLight = () => {
                     >
                       <SwiperSlide>
                         <div
-                          className="testimonial-card featured"
+                          className="testimonial-card featured testimonial-card-modern"
                           data-reviewer="kate"
                         >
-                          <div className="testimonial-header">
-                            <div className="reviewer-avatar">
+                          <div className="testimonial-header testimonial-header-modern">
+                            <div className="reviewer-avatar reviewer-avatar-modern">
                               <span className="avatar-initial">K</span>
                             </div>
                             <div className="reviewer-info">
                               <h4 className="reviewer-name">Kate W.</h4>
-                              <p className="reviewer-context">
-                                College Student, Daily User
-                              </p>
+                              <p className="reviewer-context">College Student, Daily User</p>
                               <div className="rating">⭐⭐⭐⭐⭐</div>
                             </div>
                           </div>
-                          <blockquote className="testimonial-text">
-                            "This provides fantastic full coverage for my dark
-                            circles and it's a nice silky coverage that I wear
-                            every single day. Perfect for those 8am classes
-                            after late study sessions!"
+                          <blockquote className="testimonial-text testimonial-text-modern">
+                            “This provides fantastic full coverage for my dark circles and it's a nice silky coverage that I wear every single day. Perfect for those 8am classes after late study sessions!”
                           </blockquote>
-                          <div className="testimonial-footer">
-                            <span className="verified-badge">
-                              ✓ Verified Buyer
-                            </span>
-                            <span className="usage-time">
-                              Used for 6+ months
-                            </span>
+                          <div className="testimonial-footer testimonial-footer-modern">
+                            <span className="verified-badge verified-badge-modern">✓ Verified Buyer</span>
+                            <span className="usage-time usage-time-modern">Used for 6+ months</span>
                           </div>
                         </div>
                       </SwiperSlide>
 
                       <SwiperSlide>
                         <div
-                          className="testimonial-card"
+                          className="testimonial-card testimonial-card-modern"
                           data-reviewer="katrina"
                         >
-                          <div className="testimonial-header">
-                            <div className="reviewer-avatar">
+                          <div className="testimonial-header testimonial-header-modern">
+                            <div className="reviewer-avatar reviewer-avatar-modern">
                               <span className="avatar-initial">K</span>
                             </div>
                             <div className="reviewer-info">
                               <h4 className="reviewer-name">Katrina L.</h4>
-                              <p className="reviewer-context">
-                                Working Professional
-                              </p>
+                              <p className="reviewer-context">Working Professional</p>
                               <div className="rating">⭐⭐⭐⭐⭐</div>
                             </div>
                           </div>
-                          <blockquote className="testimonial-text">
-                            "The Winky Lux concealer is full coverage without
-                            the cakey feel—it's super lightweight and blends
-                            like a dream. Saves me every morning!"
+                          <blockquote className="testimonial-text testimonial-text-modern">
+                            “The Winky Lux concealer is full coverage without the cakey feel—it's super lightweight and blends like a dream. Saves me every morning!”
                           </blockquote>
-                          <div className="testimonial-footer">
-                            <span className="verified-badge">
-                              ✓ Verified Purchase
-                            </span>
-                            <span className="usage-time">Daily user</span>
+                          <div className="testimonial-footer testimonial-footer-modern">
+                            <span className="verified-badge verified-badge-modern">✓ Verified Purchase</span>
+                            <span className="usage-time usage-time-modern">Daily user</span>
                           </div>
                         </div>
                       </SwiperSlide>
 
                       <SwiperSlide>
                         <div
-                          className="testimonial-card"
+                          className="testimonial-card testimonial-card-modern"
                           data-reviewer="veronica"
                         >
-                          <div className="testimonial-header">
-                            <div className="reviewer-avatar">
+                          <div className="testimonial-header testimonial-header-modern">
+                            <div className="reviewer-avatar reviewer-avatar-modern">
                               <span className="avatar-initial">V</span>
                             </div>
                             <div className="reviewer-info">
                               <h4 className="reviewer-name">Veronica A.</h4>
-                              <p className="reviewer-context">
-                                Graduate Student
-                              </p>
+                              <p className="reviewer-context">Graduate Student</p>
                               <div className="rating">⭐⭐⭐⭐⭐</div>
                             </div>
                           </div>
-                          <blockquote className="testimonial-text">
-                            "It's the perfect match, creamy, blends well and
-                            doesn't leave creases. Essential for thesis writing
-                            all-nighters - I look human even when I feel like a
-                            zombie!"
+                          <blockquote className="testimonial-text testimonial-text-modern">
+                            “It's the perfect match, creamy, blends well and doesn't leave creases. Essential for thesis writing all-nighters – I look human even when I feel like a zombie!”
                           </blockquote>
-                          <div className="testimonial-footer">
-                            <span className="verified-badge">
-                              ✓ Verified Buyer
-                            </span>
-                            <span className="usage-time">Used for 1+ year</span>
+                          <div className="testimonial-footer testimonial-footer-modern">
+                            <span className="verified-badge verified-badge-modern">✓ Verified Buyer</span>
+                            <span className="usage-time usage-time-modern">Used for 1+ year</span>
                           </div>
                         </div>
                       </SwiperSlide>
 
                       <SwiperSlide>
                         <div className="testimonial-card" data-reviewer="sarah">
-                          <div className="testimonial-header">
-                            <div className="reviewer-avatar">
+                          <div className="testimonial-header testimonial-header-modern">
+                            <div className="reviewer-avatar reviewer-avatar-modern">
                               <span className="avatar-initial">S</span>
                             </div>
                             <div className="reviewer-info">
                               <h4 className="reviewer-name">Sarah M.</h4>
-                              <p className="reviewer-context">
-                                Young Professional
-                              </p>
+                              <p className="reviewer-context">Young Professional</p>
                               <div className="rating">⭐⭐⭐⭐⭐</div>
                             </div>
                           </div>
-                          <blockquote className="testimonial-text">
-                            "I needed something hydrating since my skin isn't 20
-                            anymore (haha). It blends nicely and you seriously
-                            only need a tiny amount. Perfect for early morning
-                            meetings!"
+                          <blockquote className="testimonial-text testimonial-text-modern">
+                            “I needed something hydrating since my skin isn't 20 anymore (haha). It blends nicely and you seriously only need a tiny amount. Perfect for early morning meetings!”
                           </blockquote>
-                          <div className="testimonial-footer">
-                            <span className="verified-badge">
-                              ✓ Verified Purchase
-                            </span>
-                            <span className="usage-time">Daily user</span>
+                          <div className="testimonial-footer testimonial-footer-modern">
+                            <span className="verified-badge verified-badge-modern">✓ Verified Purchase</span>
+                            <span className="usage-time usage-time-modern">Daily user</span>
                           </div>
                         </div>
                       </SwiperSlide>
