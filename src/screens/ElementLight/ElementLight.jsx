@@ -1109,7 +1109,7 @@ export const ElementLight = () => {
     borderBottom: "1px solid #eee",
     textAlign: "center"
   }}>
-    <h3 style={{ margin: 0, fontSize: '26px', fontWeight: 700, color: "#333" , lineHeight:'26px',marginBottom:'10px' , textAlign:'left'}}>
+    <h3 style={{ margin: 0, fontSize: '26px', fontWeight: 700, color: "#333" , lineHeight:'26px',marginBottom:'10px' }}>
       Pepper Perfect vs Other Concealers
     </h3>
   </header>
@@ -1125,7 +1125,7 @@ export const ElementLight = () => {
       borderBottom: "1px solid #eee"
     }}>
       <div style={{ padding: "14px 12px" , color: "#444" }}>Features</div>
-      <div style={{ padding: "14px 12px", textAlign: "center", color: "#444" }}>Other Concealers</div>
+      <div style={{ padding: "14px 12px", textAlign: "left", color: "#444" }}>Other Concealers</div>
       <div style={{ padding: "14px 12px", textAlign: "center", color: "#ff6b6b" }}>Peeper Perfect</div>
     </div>
 
