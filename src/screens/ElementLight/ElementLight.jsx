@@ -1109,7 +1109,7 @@ export const ElementLight = () => {
     borderBottom: "1px solid #eee",
     textAlign: "center"
   }}>
-    <h3 style={{ margin: 0, fontSize: '26px', fontWeight: 700, color: "#333" , lineHeight:'26px',marginBottom:'10px'}}>
+    <h3 style={{ margin: 0, fontSize: '26px', fontWeight: 700, color: "#333" , lineHeight:'26px',marginBottom:'10px' , textAlign:'left'}}>
       Pepper Perfect vs Other Concealers
     </h3>
   </header>
