@@ -134,13 +134,11 @@
   filter: drop-shadow(0 2px 8px #ffe4ec);
 }
 .science-behind-glow .sbg-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 14px;
-  margin-bottom: 32px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
+
 }
 .science-behind-glow .sbg-card-modern {
   background: #fff;
@@ -253,13 +251,10 @@
 }
 
 .science-behind-glow .sbg-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  margin-bottom: 32px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
 }
 .science-behind-glow .sbg-card-modern {
   background: #fff;
@@ -988,7 +983,7 @@ body {
 }
 
 .image-comparison {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .comparison-wrapper {
@@ -997,7 +992,7 @@ body {
   margin: 0 auto;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  
   padding: 20px;
 }
 
@@ -5219,7 +5214,7 @@ body {
   height: 778px;
   left: 0;
   position: absolute;
-  top: 11340px;
+  top: 10260px;
   width: 100%;
   max-width: 390px;
 }
@@ -6059,40 +6054,38 @@ body {
 
 /* Coverage Claims Section */
 .element-light .coverage-claims {
-  padding: 40px 0 80px 0;
-  background: linear-gradient(to right, #fcf5f5, #fff9f9);
   overflow: hidden;
 }
 
 .element-light .coverage-claims .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px;
   text-align: center;
 }
 
 .element-light .coverage-claims .section-title {
-  font-size: var(--font-size-3xl);
+  font-size: 22px;
   color: #1a1a1a;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   font-weight: var(--font-weight-bold);
-  letter-spacing: var(--letter-spacing-tight);
   line-height: var(--line-height-normal);
 }
 
 .element-light .coverage-claims .section-subtitle {
-  font-size: var(--font-size-lg);
+  font-size: 16px;
   color: #666;
-  margin-bottom: 48px;
+  margin-bottom: 8px;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-relaxed);
+  
 }
 
 .element-light .claims-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-  margin-bottom: 64px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .element-light .claim-card {
@@ -6463,15 +6456,13 @@ body {
   max-width: 386px;
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  padding: 20px 5px;
+  padding: 0px 5px;
   min-height: 400px;
 }
 
 .element-light .testimonials .container {
   width: 100%;
   max-width: 376px;
-  margin: 30px auto;
   padding: 0 10px;
 }
 
@@ -6491,7 +6482,7 @@ body {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-sm);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   letter-spacing: var(--letter-spacing-normal);
   line-height: var(--line-height-relaxed);
   font-weight: var(--font-weight-regular);
@@ -6500,12 +6491,10 @@ body {
 /* Swiper Container */
 .element-light .testimonial-swiper-container {
   position: relative;
-  margin-bottom: 30px;
 }
 
 .element-light .testimonial-swiper {
   width: 100%;
-  padding-bottom: 40px;
 }
 
 /* Unified Testimonial Card Styling */
@@ -6672,7 +6661,7 @@ body {
   border: 2px solid #e8d5c4;
   border-radius: 50%;
   width: 35px;
-
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6996,13 +6985,12 @@ body {
 
 .science-behind-glow .sbg-header {
   text-align: center;
-  margin-bottom: clamp(40px, 8vw, 64px);
   position: relative;
   z-index: 1;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: clamp(40px, 8vw, 64px);
+  margin-bottom: 10px;
 }
 
 .science-behind-glow .sbg-title {
@@ -7143,11 +7131,10 @@ body {
   gap: clamp(20px, 4vw, 32px);
   position: relative;
   z-index: 1;
-  margin-bottom: clamp(48px, 8vw, 64px);
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: clamp(48px, 8vw, 64px);
+  
 }
 
 .science-behind-glow .sbg-card {
@@ -7849,4 +7836,121 @@ body {
 
 .troopod-video-swiper .swiper-pagination-bullet {
   background: #ff6b9d;
+}
+
+
+/* === Reference-style cards (neutral, no heavy colors) === */
+.sbg-grid.sbg-ing{
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
+}
+
+.ing-card{
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  overflow:hidden;
+}
+
+.ing-media{
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+  margin:10px 10px 0 10px;
+  aspect-ratio:4/3;
+}
+
+.ing-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:12px;
+}
+
+.ing-pill{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:#111;         /* dark pill like the reference */
+  color:#fff;
+  font-weight:700;
+  font-size:9px;
+  line-height:1;
+  padding:6px 10px;
+  border-radius:8px;
+  letter-spacing:.4px;
+}
+
+.ing-bar{
+  background:#f7f7f8;      /* light, neutral title bar */
+  color:#111;
+  font-size:11px;
+  text-align:center;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:14px 12px 12px;
+  margin:10px 10px 0;
+  border-radius:12px;
+}
+
+.ing-body{
+  padding:10px 14px 16px;
+  color:#555;
+  font-size:14px;
+}
+
+.testimonial-card.exact-style {
+  background: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto 20px;
+  max-width: 600px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.reviewer-name {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial-meta {
+  font-size: 0.85rem;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  color: #e6398f; /* pink rating stars */
+  font-size: 1rem;
+}
+
+.verified {
+  color: #666;
+}
+
+.secondary {
+  background: none;
+  box-shadow: none;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
 }

@@ -626,160 +626,88 @@ export const ElementLight = () => {
                     looking awake
                   </p>
 
-                  <div className="testimonial-swiper-container">
-                    <Swiper
-                      modules={[Navigation, Pagination, Autoplay]}
-                      spaceBetween={20}
-                      slidesPerView={1}
-                      navigation={{
-                        nextEl: ".testimonial-next",
-                        prevEl: ".testimonial-prev",
-                      }}
-                      autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                      }}
-                      breakpoints={{
-                        390: {
-                          slidesPerView: 1,
-                          spaceBetween: 15,
-                        },
-                      }}
-                      className="testimonial-swiper"
-                    >
-                      <SwiperSlide>
-                        <div
-                          className="testimonial-card featured testimonial-card-modern"
-                          data-reviewer="kate"
-                        >
-                          <div className="testimonial-header testimonial-header-modern">
-                            <div className="reviewer-avatar reviewer-avatar-modern">
-                              <span className="avatar-initial">K</span>
-                            </div>
-                            <div className="reviewer-info">
-                              <h4 className="reviewer-name">Kate W.</h4>
-                              <p className="reviewer-context">College Student, Daily User</p>
-                              <div className="rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                          </div>
-                          <blockquote className="testimonial-text testimonial-text-modern">
-                            “This provides fantastic full coverage for my dark circles and it's a nice silky coverage that I wear every single day. Perfect for those 8am classes after late study sessions!”
-                          </blockquote>
-                          <div className="testimonial-footer testimonial-footer-modern">
-                            <span className="verified-badge verified-badge-modern">✓ Verified Buyer</span>
-                            <span className="usage-time usage-time-modern">Used for 6+ months</span>
-                          </div>
-                        </div>
-                      </SwiperSlide>
+<div className="testimonial-swiper-container">
+  <Swiper
+    modules={[Navigation, Pagination, Autoplay]}
+    spaceBetween={20}
+    slidesPerView={1}
+    navigation={{
+      nextEl: ".testimonial-next",
+      prevEl: ".testimonial-prev",
+    }}
+    autoplay={{
+      delay: 5000,
+      disableOnInteraction: false,
+    }}
+    className="testimonial-swiper"
+  >
+    {/* Sarah M. */}
+    <SwiperSlide>
+      <div className="testimonial-card exact-style">
+        <blockquote className="testimonial-quote">
+          This isn't just makeup, it's my daily confidence boost. The way it
+          transforms my under-eye area is pure magic!
+        </blockquote>
+        <p className="reviewer-name">— Sarah M. | Beauty Editor</p>
+        <div className="testimonial-meta">
+          <span className="stars">★★★★★</span>
+          <span className="verified">| Verified Purchase</span>
+        </div>
+      </div>
 
-                      <SwiperSlide>
-                        <div
-                          className="testimonial-card testimonial-card-modern"
-                          data-reviewer="katrina"
-                        >
-                          <div className="testimonial-header testimonial-header-modern">
-                            <div className="reviewer-avatar reviewer-avatar-modern">
-                              <span className="avatar-initial">K</span>
-                            </div>
-                            <div className="reviewer-info">
-                              <h4 className="reviewer-name">Katrina L.</h4>
-                              <p className="reviewer-context">Working Professional</p>
-                              <div className="rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                          </div>
-                          <blockquote className="testimonial-text testimonial-text-modern">
-                            “The Winky Lux concealer is full coverage without the cakey feel—it's super lightweight and blends like a dream. Saves me every morning!”
-                          </blockquote>
-                          <div className="testimonial-footer testimonial-footer-modern">
-                            <span className="verified-badge verified-badge-modern">✓ Verified Purchase</span>
-                            <span className="usage-time usage-time-modern">Daily user</span>
-                          </div>
-                        </div>
-                      </SwiperSlide>
+    </SwiperSlide>
 
-                      <SwiperSlide>
-                        <div
-                          className="testimonial-card testimonial-card-modern"
-                          data-reviewer="veronica"
-                        >
-                          <div className="testimonial-header testimonial-header-modern">
-                            <div className="reviewer-avatar reviewer-avatar-modern">
-                              <span className="avatar-initial">V</span>
-                            </div>
-                            <div className="reviewer-info">
-                              <h4 className="reviewer-name">Veronica A.</h4>
-                              <p className="reviewer-context">Graduate Student</p>
-                              <div className="rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                          </div>
-                          <blockquote className="testimonial-text testimonial-text-modern">
-                            “It's the perfect match, creamy, blends well and doesn't leave creases. Essential for thesis writing all-nighters – I look human even when I feel like a zombie!”
-                          </blockquote>
-                          <div className="testimonial-footer testimonial-footer-modern">
-                            <span className="verified-badge verified-badge-modern">✓ Verified Buyer</span>
-                            <span className="usage-time usage-time-modern">Used for 1+ year</span>
-                          </div>
-                        </div>
-                      </SwiperSlide>
+    {/* Kate W */}
+    <SwiperSlide>
+      <div className="testimonial-card exact-style">
+        <blockquote className="testimonial-quote">
+          This provides fantastic full coverage for my dark circles and it's a
+          nice silky coverage that I wear every single day. Perfect for those
+          8am classes after late study sessions!
+        </blockquote>
+        <p className="reviewer-name">— Kate W. | College Student</p>
+        <div className="testimonial-meta">
+          <span className="stars">★★★★★</span>
+          <span className="verified">| Verified Buyer</span>
+        </div>
+      </div>
+    </SwiperSlide>
 
-                      <SwiperSlide>
-                        <div className="testimonial-card" data-reviewer="sarah">
-                          <div className="testimonial-header testimonial-header-modern">
-                            <div className="reviewer-avatar reviewer-avatar-modern">
-                              <span className="avatar-initial">S</span>
-                            </div>
-                            <div className="reviewer-info">
-                              <h4 className="reviewer-name">Sarah M.</h4>
-                              <p className="reviewer-context">Young Professional</p>
-                              <div className="rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                          </div>
-                          <blockquote className="testimonial-text testimonial-text-modern">
-                            “I needed something hydrating since my skin isn't 20 anymore (haha). It blends nicely and you seriously only need a tiny amount. Perfect for early morning meetings!”
-                          </blockquote>
-                          <div className="testimonial-footer testimonial-footer-modern">
-                            <span className="verified-badge verified-badge-modern">✓ Verified Purchase</span>
-                            <span className="usage-time usage-time-modern">Daily user</span>
-                          </div>
-                        </div>
-                      </SwiperSlide>
+    {/* Katrina */}
+    <SwiperSlide>
+      <div className="testimonial-card exact-style">
+        <blockquote className="testimonial-quote">
+          The Winky Lux concealer is full coverage without the cakey feel—it's
+          super lightweight and blends like a dream. Saves me every morning!
+        </blockquote>
+        <p className="reviewer-name">
+          — Katrina L. | Working Professional
+        </p>
+        <div className="testimonial-meta">
+          <span className="stars">★★★★★</span>
+          <span className="verified">| Verified Purchase</span>
+        </div>
+      </div>
+    </SwiperSlide>
 
-                      <SwiperSlide>
-                        <div
-                          className="testimonial-card expert-review"
-                          data-reviewer="expert"
-                        >
-                          <div className="testimonial-header">
-                            <div className="reviewer-avatar expert-avatar">
-                              <span className="avatar-initial">★</span>
-                            </div>
-                            <div className="reviewer-info">
-                              <h4 className="reviewer-name">MILABU Beauty</h4>
-                              <p className="reviewer-context">
-                                Professional Beauty Reviewer
-                              </p>
-                              <div className="rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                          </div>
-                          <blockquote className="testimonial-text">
-                            "Peeper Perfect makes it into top 3 Drugstore
-                            Concealers list due to the low price and skincare
-                            benefits that it offers."
-                          </blockquote>
-                          <div className="testimonial-footer">
-                            <span className="expert-badge">
-                              ✓ Beauty Expert
-                            </span>
-                            <span className="review-source">
-                              Professional Review
-                            </span>
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                    </Swiper>
+    {/* Veronica */}
+    <SwiperSlide>
+      <div className="testimonial-card exact-style">
+        <blockquote className="testimonial-quote">
+          It's the perfect match, creamy, blends well and doesn't leave creases.
+          Essential for thesis writing all-nighters – I look human even when I
+          feel like a zombie!
+        </blockquote>
+        <p className="reviewer-name">— Veronica A. | Graduate Student</p>
+        <div className="testimonial-meta">
+          <span className="stars">★★★★★</span>
+          <span className="verified">| Verified Buyer</span>
+        </div>
+      </div>
+    </SwiperSlide>
+  </Swiper>
 
-                    {/* Navigation arrows */}
-                    <div className="testimonial-navigation">
+      <div className="testimonial-navigation">
                       <button className="testimonial-prev">
                         <svg width="20" height="20" viewBox="0 0 20 20">
                           <path
@@ -800,8 +728,10 @@ export const ElementLight = () => {
                           />
                         </svg>
                       </button>
-                    </div>
-                  </div>
+                      </div>
+
+</div>
+
                 </div>
               </section>
 
@@ -984,171 +914,291 @@ export const ElementLight = () => {
                     </p>
                   </div>
 
-                  <div className="sbg-intro">
-                    <div className="sbg-intro-modern">
-                      <div className="sbg-intro-modern-visual" aria-hidden="true">
-                        <svg width="70" height="70" viewBox="0 0 70 70" className="sbg-heart-modern">
-                          <defs>
-                            <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
-                              <stop offset="0%" stopColor="#fff6fa" stopOpacity="1" />
-                              <stop offset="100%" stopColor="#FFD1DC" stopOpacity="0.7" />
-                            </radialGradient>
-                          </defs>
-                          <circle cx="35" cy="35" r="32" fill="url(#glowGrad)" />
-                          <path d="M35 22 C29 30, 27 44, 35 52 C43 44, 41 30, 35 22 Z" fill="#FF69B4" />
-                          <text x="35" y="65" textAnchor="middle" fontSize="7" fill="#c23a6d">Glow + Care</text>
-                        </svg>
-                      </div>
-                      <div className="sbg-intro-modern-copy">
-                        <h3 className="sbg-intro-modern-title">More Than Just Coverage</h3>
-                        <div className="sbg-intro-modern-divider"></div>
-                        <p className="sbg-intro-modern-text">
-                          <span style={{color:'#c23a6d',fontWeight:600}}>Skincare-powered radiance.</span> Peeper Perfect is designed to <b>nourish</b> and <b>improve</b> your skin, not just cover it up.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+{/* === Ingredients lifestyle cards (reference-style) === */}
+<div className="sbg-grid sbg-ing">
+  {/* Hydrolyzed Collagen */}
+  <article className="ing-card">
+    <div className="ing-media">
+      <img
+        src="https://images.unsplash.com/photo-1671492241057-e0ad01ceb1c8?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbGxhZ2VufGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000"
+        alt="Collagen skincare serum bottle on stone (Unsplash)"
+        loading="lazy"
+      />
+      <span className="ing-pill">ANTI-AGING</span>
+    </div>
+    <div className="ing-bar">
+      HYDROLYZED COLLAGEN
+    </div>
+    <div className="ing-body">
+      <p>Firms and plumps for a youthful look.</p>
+    </div>
+  </article>
 
-                  <div className="sbg-grid">
-                    <article className="sbg-card-modern">
-                      <div className="sbg-card-modern-icon" style={{background:'#ffe4ec'}}>
-                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#FFE4E8" stroke="#FF6FA3" strokeWidth="1.5"/><path d="M12 18 Q15 12, 18 18 Q21 12, 24 18 Q21 24, 18 18 Q15 24, 12 18" fill="#FF6FA3"/></svg>
-                      </div>
-                      <div className="sbg-card-modern-content">
-                        <div className="sbg-card-modern-title">Hydrolyzed Collagen</div>
-                        <div className="sbg-card-modern-desc">Firms and plumps for a youthful look.</div>
-                        <div className="sbg-card-modern-badge" style={{background:'#fff0f6',color:'#c23a6d'}}>Anti-Aging</div>
-                      </div>
-                    </article>
-                    <article className="sbg-card-modern">
-                      <div className="sbg-card-modern-icon" style={{background:'#e6f7ff'}}>
-                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#E6F7FF" stroke="#00BFFF" strokeWidth="1.5"/><circle cx="13" cy="15" r="2" fill="#00BFFF"/><circle cx="23" cy="15" r="2.5" fill="#00BFFF"/><circle cx="18" cy="23" r="3" fill="#00BFFF"/></svg>
-                      </div>
-                      <div className="sbg-card-modern-content">
-                        <div className="sbg-card-modern-title">Hyaluronic Acid</div>
-                        <div className="sbg-card-modern-desc">Deep hydration, smooth finish.</div>
-                        <div className="sbg-card-modern-badge" style={{background:'#e6f7ff',color:'#0099cc'}}>Hydration</div>
-                      </div>
-                    </article>
-                    <article className="sbg-card-modern">
-                      <div className="sbg-card-modern-icon" style={{background:'#fff9e6'}}>
-                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#FFF9E6" stroke="#FFC400" strokeWidth="1.5"/><path d="M18 7 L19 13 L25 12 L20 16 L26 19 L20 19 L21 27 L18 22 L15 27 L16 19 L10 19 L16 16 L11 12 L17 13 Z" fill="#FFC400"/></svg>
-                      </div>
-                      <div className="sbg-card-modern-content">
-                        <div className="sbg-card-modern-title">Vitamin E (Tocopherol)</div>
-                        <div className="sbg-card-modern-desc">Nourishes and protects skin.</div>
-                        <div className="sbg-card-modern-badge" style={{background:'#fffbe6',color:'#bfa100'}}>Antioxidant</div>
-                      </div>
-                    </article>
-                    <article className="sbg-card-modern">
-                      <div className="sbg-card-modern-icon" style={{background:'#f2fff2'}}>
-                        <svg width="28" height="28" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#F2FFF2" stroke="#28A745" strokeWidth="1.5"/><path d="M12 18 Q15 12, 18 15 Q21 12, 24 18 Q21 24, 18 21 Q15 24, 12 18" fill="#28A745"/><circle cx="18" cy="18" r="3" fill="#98FB98"/></svg>
-                      </div>
-                      <div className="sbg-card-modern-content">
-                        <div className="sbg-card-modern-title">Glycerin</div>
-                        <div className="sbg-card-modern-desc">Smooth, seamless application.</div>
-                        <div className="sbg-card-modern-badge" style={{background:'#f2fff2',color:'#28a745'}}>Smooth Application</div>
-                      </div>
-                    </article>
-                  </div>
+  {/* Hyaluronic Acid */}
+  <article className="ing-card">
+    <div className="ing-media">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661503187612-e0e7a8f50400?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNraW5jYXJlJTIwaW5ncmVkaWVudHN8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000"
+        alt="The Ordinary hyaluronic acid bottles (Unsplash)"
+        loading="lazy"
+      />
+      <span className="ing-pill">HYDRATION</span>
+    </div>
+    <div className="ing-bar">
+      HYALURONIC ACID
+    </div>
+    <div className="ing-body">
+      <p>Deep hydration, smooth finish.</p>
+    </div>
+  </article>
+
+  {/* Vitamin E (Tocopherol) */}
+  <article className="ing-card">
+    <div className="ing-media">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661578356704-903bacf893d8?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbGxhZ2VufGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000"
+        alt="Vitamin E oil bottle in hand (Unsplash)"
+        loading="lazy"
+      />
+      <span className="ing-pill">ANTIOXIDANT</span>
+    </div>
+    <div className="ing-bar">
+      VITAMIN E (TOCOPHEROL)
+    </div>
+    <div className="ing-body">
+      <p>Nourishes and protects skin.</p>
+    </div>
+  </article>
+
+  {/* Glycerin */}
+  <article className="ing-card">
+    <div className="ing-media">
+      <img
+        src="https://images.unsplash.com/photo-1671492241057-e0ad01ceb1c8?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbGxhZ2VufGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000"
+        alt="Clear glass cosmetic bottles on towel (Unsplash)"
+        loading="lazy"
+      />
+      <span className="ing-pill">SMOOTH APPLICATION</span>
+    </div>
+    <div className="ing-bar">
+      GLYCERIN
+    </div>
+    <div className="ing-body">
+      <p>Smooth, seamless application.</p>
+    </div>
+  </article>
+</div>
+
                    
-                  <section className="the-secret-to-glow minimal-glow-section" style={{maxWidth:'420px',margin:'25px auto',padding:'28px 20px',background:'#fff6fa',borderRadius:'1px',boxShadow:'0 2px 16px 0 rgba(255,111,163,0.08)',border:'1.5px solid #ffe4ec',textAlign:'center',position:'relative'}}>
-                    <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'16px'}}>
-                      <span style={{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'54px',height:'54px',background:'#fff',borderRadius:'50%',boxShadow:'0 2px 8px #ffe4ec',border:'1.5px solid #ff6ba3'}}>
-                        <svg width="32" height="32" viewBox="0 0 32 32">
-                          <circle cx="16" cy="16" r="14" fill="#fffbe7"/>
-                          <path d="M16 6 L16 26 M6 16 L26 16" stroke="#ff6ba3" strokeWidth="2.2" strokeLinecap="round"/>
-                          <circle cx="16" cy="16" r="4" fill="#ff6ba3"/>
+                  <section
+                    className="the-secret-to-glow minimal-glow-section"
+                    style={{
+                      maxWidth: "420px",
+                      margin: "5px auto",
+                      padding: "10px 10px",
+                      background: "#fff",
+                      borderRadius: "1px",
+                      border: "1.5px solid #ffe4ec",
+                      textAlign: "center",
+                      position: "relative",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        gap: "10px",
+                      }}
+                    >
+                      {/* Hydration */}
+                      <div
+                        style={{
+                          flex: 1,
+                          background: "#fff",
+                          borderRadius: "10px",
+                          padding: "10px 0",
+                          boxShadow: "0 1px 4px #ffe4ec",
+                          border: "1px solid #ffe4ec",
+                          textAlign: "center",
+                        }}
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style={{ marginBottom: "5px" }}
+                        >
+                          <path
+                            d="M12 2C12 2 6 8 6 12C6 15.866 8.686 18 12 18C15.314 18 18 15.866 18 12C18 8 12 2 12 2Z"
+                            fill="#FF6BA3"
+                          />
+                          <circle cx="12" cy="12" r="3" fill="#FFE4EC" />
                         </svg>
-                      </span>
-                    </div>
-                    <h3 style={{fontWeight:700,fontSize:'1.35rem',color:'#c23a6d',marginBottom:'10px',letterSpacing:'-0.5px'}}>The Secret to <span style={{color:'#ff6ba3'}}>That Glow</span></h3>
-                    <div style={{fontSize:'1rem',color:'#4F5D75',marginBottom:'18px',lineHeight:1.5}}>
-                      Skincare-powered radiance. Effortless, healthy, luminous skin—every day.
-                    </div>
-                    <div style={{display:'flex',justifyContent:'space-between',gap:'10px',marginTop:'18px'}}>
-                      <div style={{flex:1,background:'#fff',borderRadius:'10px',padding:'10px 0',boxShadow:'0 1px 4px #ffe4ec',border:'1px solid #ffe4ec'}}>
-                        <div style={{fontWeight:700,color:'#ff6ba3',fontSize:'1.1rem'}}>24hrs</div>
-                        <div style={{fontSize:'0.65rem',color:'#b97a95',textTransform:'uppercase',letterSpacing:'0.5px'}}>Hydration</div>
+                        <div style={{ fontWeight: 700, color: "#ff6ba3", fontSize: "1.1rem" }}>
+                          24hrs
+                        </div>
+                        <div
+                          style={{
+                            fontSize: "0.65rem",
+                            color: "#b97a95",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.5px",
+                          }}
+                        >
+                          Hydration
+                        </div>
                       </div>
-                      <div style={{flex:1,background:'#fff',borderRadius:'10px',padding:'10px 0',boxShadow:'0 1px 4px #ffe4ec',border:'1px solid #ffe4ec'}}>
-                        <div style={{fontWeight:700,color:'#ff6ba3',fontSize:'1.1rem'}}>0%</div>
-                        <div style={{fontSize:'0.65rem',color:'#b97a95',textTransform:'uppercase',letterSpacing:'0.5px'}}>Creasing</div>
+
+                      {/* Creasing */}
+                      <div
+                        style={{
+                          flex: 1,
+                          background: "#fff",
+                          borderRadius: "10px",
+                          padding: "10px 0",
+                          boxShadow: "0 1px 4px #ffe4ec",
+                          border: "1px solid #ffe4ec",
+                          textAlign: "center",
+                        }}
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style={{ marginBottom: "5px" }}
+                        >
+                          <path
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z"
+                            fill="#FF6BA3"
+                          />
+                        </svg>
+                        <div style={{ fontWeight: 700, color: "#ff6ba3", fontSize: "1.1rem" }}>
+                          0%
+                        </div>
+                        <div
+                          style={{
+                            fontSize: "0.65rem",
+                            color: "#b97a95",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.5px",
+                          }}
+                        >
+                          Creasing
+                        </div>
                       </div>
-                      <div style={{flex:1,background:'#fff',borderRadius:'10px',padding:'10px 0',boxShadow:'0 1px 4px #ffe4ec',border:'1px solid #ffe4ec'}}>
-                        <div style={{fontWeight:700,color:'#ff6ba3',fontSize:'1.1rem'}}>100%</div>
-                        <div style={{fontSize:'0.65rem',color:'#b97a95',textTransform:'uppercase',letterSpacing:'0.5px'}}>Coverage</div>
+
+                      {/* Coverage */}
+                      <div
+                        style={{
+                          flex: 1,
+                          background: "#fff",
+                          borderRadius: "10px",
+                          padding: "10px 0",
+                          boxShadow: "0 1px 4px #ffe4ec",
+                          border: "1px solid #ffe4ec",
+                          textAlign: "center",
+                        }}
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style={{ marginBottom: "5px" }}
+                        >
+                          <path
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.59L19 8L10 17Z"
+                            fill="#FF6BA3"
+                          />
+                        </svg>
+                        <div style={{ fontWeight: 700, color: "#ff6ba3", fontSize: "1.1rem" }}>
+                          100%
+                        </div>
+                        <div
+                          style={{
+                            fontSize: "0.65rem",
+                            color: "#b97a95",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.5px",
+                          }}
+                        >
+                          Coverage
+                        </div>
                       </div>
                     </div>
                   </section>
 
-                  <section className="comparison-card">
-                    <header className="comparison-card__header">
-                      <h3 className="comparison-card__title">Why Premium Ingredients Matter</h3>
-                    </header>
-                    <div className="comparison-table">
-                      <div className="comparison-table__row comparison-table__row--head">
-                        <div className="comparison-table__cell comparison-table__cell--label"></div>
-                        <div className="comparison-table__cell comparison-table__cell--other">Other Concealers</div>
-                        <div className="comparison-table__cell comparison-table__cell--peeper">Peeper Perfect</div>
-                      </div>
-                      <div className="comparison-table__row">
-                        <div className="comparison-table__cell comparison-table__cell--label">Works with skin</div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--no" aria-label="No">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
-                          </span>
-                        </div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="comparison-table__row comparison-table__row--alt">
-                        <div className="comparison-table__cell comparison-table__cell--label">Seamless, natural finish</div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--no" aria-label="No">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
-                          </span>
-                        </div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="comparison-table__row">
-                        <div className="comparison-table__cell comparison-table__cell--label">Hydrates & conditions</div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--no" aria-label="No">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
-                          </span>
-                        </div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="comparison-table__row comparison-table__row--alt">
-                        <div className="comparison-table__cell comparison-table__cell--label">All-day wear — minimal touch-ups</div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--no" aria-label="No">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#f3f6fa" stroke="#ffe4ec" strokeWidth="1.5"/><path d="M7 7L15 15M15 7L7 15" stroke="#b91c1c" strokeWidth="2" strokeLinecap="round"/></svg>
-                          </span>
-                        </div>
-                        <div className="comparison-table__cell">
-                          <span className="comparison-icon comparison-icon--yes" aria-label="Yes">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="#ffecf6" stroke="#ff6fa3" strokeWidth="1.5"/><path d="M7 12.5l3 3 5-6" stroke="#ff6fa3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <footer className="comparison-card__footer">
-                      <span className="comparison-card__note">Premium actives (hyaluronic acid, collagen boosters, antioxidants) provide immediate coverage and long-term skin benefits.</span>
-                    </footer>
-                  </section>
+<section className="comparison-card" style={{
+  background: "#fff",
+  borderRadius: "12px",
+  boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+  maxWidth: 720,
+  overflow: "hidden",
+  border: "1px solid #eee",
+  fontFamily: "inherit"
+}}>
+  <header style={{
+    background: "#fafafa",
+    padding: "16px",
+    borderBottom: "1px solid #eee",
+    textAlign: "center"
+  }}>
+    <h3 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: "#333" }}>
+      Pepper Perfect vs Other Concealers
+    </h3>
+  </header>
+
+  <div className="comparison-table">
+    {/* Table Head */}
+    <div style={{
+      display: "grid",
+      gridTemplateColumns: "2fr 1fr 1fr",
+      background: "#f8f8f8",
+      fontWeight: 700,
+      fontSize: 16,
+      borderBottom: "1px solid #eee"
+    }}>
+      <div style={{ padding: "14px 12px" }}>Features</div>
+      <div style={{ padding: "14px 12px", textAlign: "center", color: "#444" }}>Other Concealers</div>
+      <div style={{ padding: "14px 12px", textAlign: "center", color: "#c23a6d" }}>Peeper Perfect</div>
+    </div>
+
+    {[
+      { label: "Works with skin", other: "❌", peeper: "✅" },
+      { label: "Seamless, natural finish", other: "❌", peeper: "✅" },
+      { label: "Hydrates & conditions", other: "❌", peeper: "✅" },
+      { label: "All-day wear — minimal touch-ups", other: "❌", peeper: "✅" }
+    ].map((row, i) => (
+      <div key={i} style={{
+        display: "grid",
+        gridTemplateColumns: "2fr 1fr 1fr",
+        borderBottom: "1px solid #eee",
+        background: i % 2 ? "#fff" : "#fff"
+      }}>
+        <div style={{ padding: "14px 12px", fontWeight: 600, color: "#555" }}>{row.label}</div>
+        <div style={{ padding: "14px 12px", textAlign: "center", color: "#888" }}>{row.other}</div>
+        <div style={{ padding: "14px 12px", textAlign: "center", background: "#fff", fontWeight: 700, color: "#c23a6d" }}>{row.peeper}</div>
+      </div>
+    ))}
+  </div>
+
+  <footer style={{
+    background: "#fafafa",
+    padding: "14px 16px",
+    textAlign: "center",
+    fontSize: 14,
+    color: "#666"
+  }}>
+    Premium actives (hyaluronic acid, collagen boosters, antioxidants) provide immediate coverage and long-term skin benefits.
+  </footer>
+</section>
+
+                   
                 </section>
               </div>
 
