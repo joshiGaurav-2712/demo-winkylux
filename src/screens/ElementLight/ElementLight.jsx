@@ -1022,20 +1022,6 @@ export const ElementLight = () => {
                           textAlign: "center",
                         }}
                       >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          style={{ marginBottom: "5px" }}
-                        >
-                          <path
-                            d="M12 2C12 2 6 8 6 12C6 15.866 8.686 18 12 18C15.314 18 18 15.866 18 12C18 8 12 2 12 2Z"
-                            fill="#ff6b6b"
-                          />
-                          <circle cx="12" cy="12" r="3" fill="#FFE4EC" />
-                        </svg>
                         <div style={{ fontWeight: 700, color: "#ff6b6b", fontSize: "1.1rem" }}>
                           24hrs
                         </div>
@@ -1063,19 +1049,7 @@ export const ElementLight = () => {
                           textAlign: "center",
                         }}
                       >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          style={{ marginBottom: "5px" }}
-                        >
-                          <path
-                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z"
-                            fill="#ff6b6b"
-                          />
-                        </svg>
+                      
                         <div style={{ fontWeight: 700, color: "#ff6b6b", fontSize: "1.1rem" }}>
                           0%
                         </div>
@@ -1103,19 +1077,7 @@ export const ElementLight = () => {
                           textAlign: "center",
                         }}
                       >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          style={{ marginBottom: "5px" }}
-                        >
-                          <path
-                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.59L19 8L10 17Z"
-                            fill="#ff6b6b"
-                          />
-                        </svg>
+                   
                         <div style={{ fontWeight: 700, color: "#ff6ba3", fontSize: "1.1rem" }}>
                           100%
                         </div>
@@ -1162,7 +1124,7 @@ export const ElementLight = () => {
       fontSize: 16,
       borderBottom: "1px solid #eee"
     }}>
-      <div style={{ padding: "14px 12px" }}>Features</div>
+      <div style={{ padding: "14px 12px" , color: "#444" }}>Features</div>
       <div style={{ padding: "14px 12px", textAlign: "center", color: "#444" }}>Other Concealers</div>
       <div style={{ padding: "14px 12px", textAlign: "center", color: "#ff6b6b" }}>Peeper Perfect</div>
     </div>
